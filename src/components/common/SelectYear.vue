@@ -1,31 +1,53 @@
 <template>
-  <b-form-group
-      label="Година"
-      label-for="selectYear"
-    >
-    <b-form-select @change="selectYearChange" id="selectYear" v-model="selected" :options="options" class="mb-3" />
-  </b-form-group>
+  <div>
+<div role="group">
+    <label for="inputLive">Дворно място-УПИ</label>
+    <b-form-input v-model="text1" type="text" placeholder="кв. м" />
+
+ 
+
+    <div class="mt-2">Разгъната застроена площ</div>
+
+   <b-form-input v-model="text1" type="text" placeholder="кв. м" />
+
+    <b-form-group
+        label="Разгъната застроена площ"
+        label-for="selectArray"
+      >
+      <b-form-select @change="selectYearChange" id="selectArray" v-model="selected" :options="options" class="mb-3" />
+    </b-form-group>
+
+     <div class="mt-2">Застроена площ</div>
+
+   <b-form-input v-model="text1" type="text" placeholder="кв. м" />
+
+  </div>
+
+  </div>
+  
+
+
 </template>
 
 <script>
 export default {
-  name: 'st-select-year',
+  name: 'st-select-array',
   data () {
     return {
-      selected: '2019',
+      selected: '1000',
       options: [
-        { value: null, text: 'Избери година' },
-        { value: '2019', text: '2019' },
-        { value: '2018', text: '2018' },
-        { value: '2017', text: '2017' },
-        { value: '2016', text: '2016'}
+        { value: null, text: 'Избери площ кв.м' },
+        { value: '1000', text: '1000' },
+        { value: '1200', text: '1200' },
+        { value: '1500', text: '1500' },
+        { value: '2000', text: '2000'}
       ]
     }
   },
   methods: {
-    selectYearChange(value){
+    selectArrayChange(value){
       if(value){
-        this.$emit('selectYearChange', value);
+        this.$emit('selectArrayChange', value);
       }
     }
   }

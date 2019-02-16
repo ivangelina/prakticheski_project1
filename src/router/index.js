@@ -2,11 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Login from '../components/login';
 import Navigation from '../components/navigation/Navigation';
-import Trending from '../components/trending/Trending';
-import Movies from '../components/movies/Movies';
-import Series from '../components/series/Series';
-import Favorite from '../components/favorite/Favorite';
-import MovieDetails from '../components/moviedetails/MovieDetails';
+import Builder from '../components/builder/Builder';
 import DiscoverMovies from '../components/discover/DiscoverMovies';
 import Footer from '../components/footer/Footer';
 
@@ -22,7 +18,7 @@ export default new Router({
       },
     },
     {
-      path: '/discover',
+      path: '/home',
       name: 'DiscoverMovies',
       components: {
         navigation: Navigation,
@@ -31,49 +27,32 @@ export default new Router({
       },
     },
     {
-      path: '/trending',
-      name: 'Trending',
+      path: '/builder',
+      name: 'Builder',
       components: {
         navigation: Navigation,
-        default: Trending,
+        default: Builder,
         footer: Footer,
       },
     },
     {
-      path: '/movies',
-      name: 'Movies',
+      path: '/buyer',
+      name: 'Builder',
       components: {
         navigation: Navigation,
-        default: Movies,
+        default: Builder,
         footer: Footer,
       },
     },
     {
-      path: '/series',
-      name: 'Series',
+      path: '/calculator',
+      name: 'Builder',
       components: {
         navigation: Navigation,
-        default: Series,
+        default: Builder,
         footer: Footer,
       },
     },
-    {
-      path: '/favorite',
-      name: 'Favorite',
-      components: {
-        navigation: Navigation,
-        default: Favorite,
-        footer: Footer,
-      },
-    },
-    {
-      path: '/movie/:id',
-      name: 'Movie',
-      components: {
-        navigation: Navigation,
-        default: MovieDetails,
-        footer: Footer,
-      },
-    },
+   
   ],
 });
