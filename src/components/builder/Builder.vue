@@ -83,7 +83,7 @@
       <b-form-input v-model="text1" type="text" placeholder="цена лв." />
     </div>
     <div role="group" class="col-md-3">
-      <label for="inputLive">Част Верт пл-ка</label>
+      <label for="inputLive">Част Вертикална планировка</label>
       <b-form-input v-model="text1" type="text" placeholder="цена лв." />
     </div>
     <div role="group" class="col-md-3">
