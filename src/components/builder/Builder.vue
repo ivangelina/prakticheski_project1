@@ -6,7 +6,7 @@
       <b-form-input v-model="text1" type="text" placeholder="кв. м" />
     </div>
     <div role="group" class="col-md-3">
-      <label for="inputLive">Застроена площ - Test</label>
+      <label for="inputLive">Застроена площ</label>
       <b-form-input v-model="text1" type="text" placeholder="кв. м" />
     </div>
     <div role="group" class="col-md-3">
@@ -57,7 +57,6 @@
       <b-form-input v-model="text1" type="text" placeholder="цена лв." />
     </div>
   </div>
-
   <div class="row mt-4">
     <div role="group" class="col-md-3">
       <label for="inputLive">Груб строеж</label>
