@@ -57,6 +57,51 @@
       <b-form-input v-model="text1" type="text" placeholder="цена лв." />
     </div>
   </div>
+
+  <div class="row mt-4">
+    <div role="group" class="col-md-3">
+      <label for="inputLive">Груб строеж</label>
+      <b-form-input v-model="text1" type="text" placeholder="цена лв." />
+    </div>
+    <div role="group" class="col-md-3">
+      <label for="inputLive">Част Архитектура</label>
+      <b-form-input v-model="text1" type="text" placeholder="цена лв." />
+    </div>
+    <div role="group" class="col-md-3">
+      <label for="inputLive">Част ВиК</label>
+      <b-form-input v-model="text1" type="text" placeholder="цена лв." />
+    </div>
+    <div role="group" class="col-md-3">
+      <label for="inputLive">Част Електро</label>
+      <b-form-input v-model="text1" type="text" placeholder="цена лв." />
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div role="group" class="col-md-3">
+      <label for="inputLive">Част ОВК</label>
+      <b-form-input v-model="text1" type="text" placeholder="цена лв." />
+    </div>
+    <div role="group" class="col-md-3">
+      <label for="inputLive">Част Верт пл-ка</label>
+      <b-form-input v-model="text1" type="text" placeholder="цена лв." />
+    </div>
+    <div role="group" class="col-md-3">
+      <label for="inputLive">Част Озеленяване</label>
+      <b-form-input v-model="text1" type="text" placeholder="цена лв." />
+    </div>
+    <div role="group" class="col-md-3">
+      <label for="inputLive">Част Ограда</label>
+      <b-form-input v-model="text1" type="text" placeholder="цена лв." />
+    </div>   
+  </div>
+  <div class="row mt-1">
+    <div role="group" class="col-md-12">
+      <label for="inputLive">ИЗЧИСЛЕНИ ОБЩИ РАЗХОДИ</label>
+      <b-form-input v-model="text1" type="text" placeholder="цена лв." />
+    </div>
+     
+  </div>
 </div>
 </template>
 
