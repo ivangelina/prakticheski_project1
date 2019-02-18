@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Login from '../components/login';
 import Navigation from '../components/navigation/Navigation';
 import Builder from '../components/builder/Builder';
+import Home from '../components/home/Home';
 import DiscoverMovies from '../components/discover/DiscoverMovies';
 import Footer from '../components/footer/Footer';
 
@@ -19,10 +20,10 @@ export default new Router({
     },
     {
       path: '/home',
-      name: 'DiscoverMovies',
+      name: 'Home',
       components: {
         navigation: Navigation,
-        default: DiscoverMovies,
+        default: Home,
         footer: Footer,
       },
     },
