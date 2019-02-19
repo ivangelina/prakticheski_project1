@@ -1,5 +1,6 @@
 <template>
 <div class="container">
+  <b-img center src="https://picsum.photos/1100/300/?image=84" alt="Center image" />
   
   <div class="row mt-1">
     <div role="group" class="col-md-12">

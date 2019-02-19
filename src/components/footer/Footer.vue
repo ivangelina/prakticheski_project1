@@ -14,7 +14,7 @@
 <style>
   .footer {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     width: 80%;
     height: 40px;
     line-height: 40px;
