@@ -1,29 +1,16 @@
 <template>
-<div class="container">
-  <b-img center src="https://picsum.photos/1100/300/?image=84" alt="Center image" />
-  
-  <div class="row mt-1">
-    <div role="group" class="col-md-12">
-      <label for="inputLive">СЕКЦИЯ ПРЕДПРИЕМАЧ</label>
-      <b-form-input v-model="text1" type="text" placeholder="ИЗЧИСЛЯВАНЕ НА ВСИЧКИ РАЗХОДИ ЗА ПОСТРОЯВАНЕТО НА ЖИЛИЩНА СГРАДА" />
-    </div>
-  </div>
-
-   <div class="row mt-1">
-    <div role="group" class="col-md-12">
-      <label for="inputLive">СЕКЦИЯ КУПУВАЧ</label>
-      <b-form-input v-model="text1" type="text" placeholder="ТАЗИ СЕКЦИЯ ЩЕ БЪДЕ РАЗРАБОТЕНА НА ПО-КЪСЕН ЕТАП" />
-    </div>
-  </div>
-    
-    <div class="row mt-1">
-    <div role="group" class="col-md-12">
-      <label for="inputLive">СЕКЦИЯ КРЕДИТЕН КАЛКУЛАТОР</label>
-      <b-form-input v-model="text1" type="text" placeholder="ТАЗИ СЕКЦИЯ ЩЕ БЪДЕ РАЗРАБОТЕНА НА ПО-КЪСЕН ЕТАП" />
-    </div>
-  </div>
-
+<b-container class="bv-example-row bv-example-row-flex-cols">
+  <b-img center src="https://picsum.photos/1100/400/?image=84" alt="Center image" />
+  <div>
+  <b-card no-body>
+    <b-tabs card>
+      <b-tab title="Секция Предприемач" active>Изчисляване на всички разходи за построяването на строителен обект</b-tab>
+      <b-tab title="Секция Купувач">Тази секция ще бъде разработена на по-късен етап</b-tab>
+    </b-tabs>
+  </b-card>
 </div>
+
+</b-container>
 </template>
 
 <script>
@@ -51,3 +38,4 @@ export default {
   },
 }
 </script>
+
