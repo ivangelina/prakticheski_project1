@@ -4,6 +4,7 @@ import Login from '../components/login';
 import Navigation from '../components/navigation/Navigation';
 import Builder from '../components/builder/Builder';
 import Home from '../components/home/Home';
+import Relations from '../components/relations/Relations';
 import DiscoverMovies from '../components/discover/DiscoverMovies';
 import Footer from '../components/footer/Footer';
 
@@ -51,6 +52,15 @@ export default new Router({
       components: {
         navigation: Navigation,
         default: Builder,
+        footer: Footer,
+      },
+    },
+    {
+      path: '/relations',
+      name: 'Relations',
+      components: {
+        navigation: Navigation,
+        default: Relations,
         footer: Footer,
       },
     },
