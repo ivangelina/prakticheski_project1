@@ -1,6 +1,6 @@
 <template>
 <b-container class="bv-example-row bv-example-row-flex-cols">
-  <b-img center src="https://picsum.photos/1100/400/?image=84" alt="Center image" />
+  <b-img class="mt-5" center src="https://picsum.photos/1100/400/?image=84" alt="Center image" />
   <div>
   <b-card no-body>
     <b-tabs card>

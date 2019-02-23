@@ -64,6 +64,10 @@ export default new Router({
         footer: Footer,
       },
     },
+    {
+      path: '/plovdiv.bg',
+      beforeEnter() { location.href = 'http://www.plovdiv.bg' }
+  },
    
   ],
 });

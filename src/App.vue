@@ -21,7 +21,7 @@
 <style scoped>
   #app {
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
     min-height: 100%;
   }
 </style>
