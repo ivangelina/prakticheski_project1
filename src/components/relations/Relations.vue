@@ -1,4 +1,5 @@
 <template>
+<b-container class="bv-example-row bv-example-row-flex-cols">
 <div class="container-fluid">
   <br>
   <h3>ПОЛЕЗНИ ВРЪЗКИ</h3>
@@ -17,7 +18,7 @@
       <a href="https://www.burgas.bg/" target="_blank">Община Бургас</a>
       <br>
       <br>
-          <b-img center src="https://picsum.photos/400/200/?image=37" alt="Center image" />
+          <b-img center src="https://picsum.photos/350/200/?image=37" alt="Center image" />
         <br>
         <br>  
       </div>
@@ -28,7 +29,7 @@
       </a>
        <br>
        <br>
-       <b-img center src="https://picsum.photos/400/200/?image=28" alt="Center image" />
+       <b-img center src="https://picsum.photos/350/200/?image=28" alt="Center image" />
         <br>
     </div>
 
@@ -43,7 +44,7 @@
       <a href="https://www.rbb.bg/" target="_blank">Райфайзен банк</a>
       <br>
       <br>
-          <b-img center src="https://picsum.photos/400/200/?image=29" alt="Center image" />
+          <b-img center src="https://picsum.photos/350/200/?image=29" alt="Center image" />
         <br>
         <br>  
 
@@ -51,7 +52,7 @@
   </div>
 </div>
 
-
+</b-container>
 </template>
 
 <script>
