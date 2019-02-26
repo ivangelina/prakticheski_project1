@@ -145,7 +145,9 @@ export default {
   },
    computed: {
       overAllPrice(){
-        const price = Number(this.price1) + Number(this.price2);
+        const price = Number(this.price1) + Number(this.price2) + Number(this.price3) + Number(this.price4) + 
+       Number(this.price5) + Number(this.price6) + Number(this.price7) + Number(this.price8) + Number(this.price9) +
+        Number(this.price10) + Number(this.price11) + Number(this.price12);
         return price;
       }
     }
