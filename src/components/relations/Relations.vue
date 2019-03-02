@@ -18,7 +18,7 @@
       <a href="https://www.burgas.bg/" target="_blank">Община Бургас</a>
       <br>
       <br>
-          <b-img center src="https://picsum.photos/350/200/?image=37" alt="Center image" />
+          <b-img center src="static/images/350px-BG_Okolii.png" alt="Center image" />
         <br>
         <br>  
       </div>
@@ -29,7 +29,7 @@
       </a>
        <br>
        <br>
-       <b-img center src="https://picsum.photos/350/200/?image=28" alt="Center image" />
+       <b-img center src="static/images/b_586d79c1e89c86a50b581fef8c49c7a3.jpg" alt="Center image" />
         <br>
     </div>
 
@@ -44,7 +44,7 @@
       <a href="https://www.rbb.bg/" target="_blank">Райфайзен банк</a>
       <br>
       <br>
-          <b-img center src="https://picsum.photos/350/200/?image=29" alt="Center image" />
+          <b-img center src="static/images/banka_banki_pari_vlogove_.jpg" class="img-thumbnail" alt="Center image" />
         <br>
         <br>  
 
