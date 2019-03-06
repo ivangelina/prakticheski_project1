@@ -1,17 +1,21 @@
 <template>
 <b-container class="bv-example-row bv-example-row-flex-cols">
 <div class="container-fluid">
+  <div class="row">
+     <div role="group" class="col-md-6">
   <b-carousel
     id="carousel"
     style="text-shadow: 0px 0px 2px #0"
     indicators
-    img-width="0"
-    img-height="0"
+    img-width="1000"
+    img-height="100"
   >
     <b-carousel-slide caption="Предложение №1 - апартаменти 75кв.м по 1200лв/м2, без гараж, само паркомясто 5000лв" img-src="static/images/4.jpg" class="img-thumbnail" alt="Center image" />
     <b-carousel-slide caption="Предложение №2 - къщи 120кв.м по 1100лв/м2, с гараж 24кв.м по 800лв/м2" img-src="static/images/afd636d7a4d866ffa14bc64903956c0f.jpg" class="img-thumbnail" alt="Center image"/>
     <b-carousel-slide caption="Предложение №3 - жилищна сграда 150кв.м по 1000лв/м2, без гараж" img-src="static/images/206464b2a576d5e83242a2618bef5abc.jpg" class="img-thumbnail" alt="Center image"/>
   </b-carousel>
+  </div>
+  </div>
 </div>
   <div class="row">
     <div role="group" class="col-md-4">
