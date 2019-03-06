@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Login from '../components/login';
 import Navigation from '../components/navigation/Navigation';
 import Builder from '../components/builder/Builder';
+import Buyer from '../components/buyer/Buyer';
 import Home from '../components/home/Home';
 import Housings from '../components/housings/Housings';
 import Relations from '../components/relations/Relations';
@@ -40,10 +41,10 @@ export default new Router({
     },
     {
       path: '/buyer',
-      name: 'Builder',
+      name: 'Buyer',
       components: {
         navigation: Navigation,
-        default: Builder,
+        default: Buyer,
         footer: Footer,
       },
     },
@@ -74,10 +75,5 @@ export default new Router({
         footer: Footer,
       },
     },
-    {
-      path: '/plovdiv.bg',
-      beforeEnter() { location.href = 'http://www.plovdiv.bg' }
-  },
-   
   ],
 });
