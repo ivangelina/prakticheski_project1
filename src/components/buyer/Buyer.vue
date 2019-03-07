@@ -2,6 +2,9 @@
 <b-container class="bv-example-row bv-example-row-flex-cols">
 <div class="container-fluid">
   <div class="row">
+     <div role="group" class="col-md-3">
+       <a href="javascript:chas()">ЧАСОВНИК</a>
+     </div>
      <div role="group" class="col-md-6">
   <b-carousel
     id="carousel"
@@ -15,6 +18,9 @@
     <b-carousel-slide caption="Предложение №3 - жилищна сграда 150кв.м по 1000лв/м2, без гараж" img-src="static/images/206464b2a576d5e83242a2618bef5abc.jpg" class="img-thumbnail" alt="Center image"/>
   </b-carousel>
   </div>
+   <div role="group" class="col-md-3">
+      <a href="javascript:f2()">ДАТА</a>
+     </div>
   </div>
 </div>
   <div class="row">
@@ -88,8 +94,23 @@ export default {
         return price;
       }
      
-    }
-    
+    },
+    methods: {
+      chas(){
+       var vreme = new Date();
+       var hh = vreme.getHours();
+       var mm = vreme.getMinutes();
+       var ss = vreme.getSeconds(); 
+       
+       if (hh <= 9) hh = "0" + hh;
+       if (mm <= 9) mm = "0" + mm;
+       if (ss <= 9) ss = "0" + ss;
+
+       document.forms.ch.chasovnik.value = hh + ": " +mm+ ": " +ss;
+
+       window.setTimeout ("chas()", 1000);
+      }
+    },
    
 }
 </script>
