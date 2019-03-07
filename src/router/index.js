@@ -5,6 +5,7 @@ import Navigation from '../components/navigation/Navigation';
 import Builder from '../components/builder/Builder';
 import Buyer from '../components/buyer/Buyer';
 import Home from '../components/home/Home';
+import Maps from '../components/maps/Maps';
 import Housings from '../components/housings/Housings';
 import Relations from '../components/relations/Relations';
 import DiscoverMovies from '../components/discover/DiscoverMovies';
@@ -54,6 +55,15 @@ export default new Router({
       components: {
         navigation: Navigation,
         default: Builder,
+        footer: Footer,
+      },
+    },
+    {
+      path: '/maps',
+      name: 'Maps',
+      components: {
+        navigation: Navigation,
+        default: Maps,
         footer: Footer,
       },
     },
