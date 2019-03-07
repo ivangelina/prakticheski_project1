@@ -3,7 +3,12 @@
 <div class="container-fluid">
   <div class="row">
      <div role="group" class="col-md-3">
-       <a href="javascript:chas()">ЧАСОВНИК</a>
+       <form id="ch" method="" action="">
+       <a href="script: chas()">ЧАСОВНИК</a>
+       <p>
+         <input type="button" name="chasovnik" value="vreme" onclick="chas()"/>
+       </p>
+       </form>
      </div>
      <div role="group" class="col-md-6">
   <b-carousel
@@ -19,7 +24,12 @@
   </b-carousel>
   </div>
    <div role="group" class="col-md-3">
-      <a href="javascript:f2()">ДАТА</a>
+      <form id="" method="" action="">
+       <a href="script: date()">ДАТА</a>
+       <p>
+         <input type="button" name="date" value="date" onclick="date()"/>
+       </p>
+       </form>
      </div>
   </div>
 </div>
@@ -96,7 +106,7 @@ export default {
      
     },
     methods: {
-      chas(){
+       chas(){
        var vreme = new Date();
        var hh = vreme.getHours();
        var mm = vreme.getMinutes();
