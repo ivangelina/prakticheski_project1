@@ -1,6 +1,8 @@
 <template>
      <b-container class="bv-example-row bv-example-row-flex-cols">
      <div class="container-fluid">
+       <br>
+       <h3>ТЪРСЕНЕ НА АДРЕСИ В ГРАД ПЛОВДИВ, ГРАД СОФИЯ И ГРАД БУРГАС</h3>
       <div class="row">
        <div role="group" class="col-md-6"> 
       <b-form-input v-model="searchValue" size="sm" class="mr-sm-2" type="text" placeholder="Search"/>
@@ -24,7 +26,7 @@
     <b-carousel-slide caption="Карта на град София" img-src="static/images/map_park.jpg" class="img-thumbnail" alt="Center image"/>
 
     
-     <b-carousel-slide caption="Карта на град София" img-src="static/images/map_park.jpg" class="img-thumbnail" alt="Center image"/>
+     <b-carousel-slide caption="Карта на град Бургас" img-src="static/images/6.jpg" class="img-thumbnail" alt="Center image"/>
   </b-carousel>
   </div>
   </div>
