@@ -44,3 +44,20 @@
   }
 
 </script>
+
+<style>
+  .maps {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-shadow: 2px 1px 2px #888888;
+    background-image: url(http://scienceidea.in/wp-content/uploads/2018/01/building-engineer-.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    line-height: 40px;
+  }
+</style>
+
