@@ -1,6 +1,6 @@
 <template>
 <b-container class="bv-example-row bv-example-row-flex-cols">
-  <b-img class="mt-5" center src="https://picsum.photos/1100/400/?image=84" alt="Center image" />
+  <b-img class="mt-2" center src="https://picsum.photos/1100/400/?image=84" alt="Center image" />
   <div>
   <b-card no-body>
     <b-tabs card>
@@ -8,9 +8,16 @@
       <b-tab title="Секция Купувач">Тази секция ще бъде разработена на по-късен етап</b-tab>
     </b-tabs>
   </b-card>
-  <br>
+  <div>
+  <b-embed
+    type="iframe"
+    aspect="16by9"
+    <iframe width="1100" height="25" src="https://www.youtube.com/embed/NPuxjer_OJg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+    </iframe>
+  
 </div>
-
+</div>
+</div>
 </b-container>
 </template>
 

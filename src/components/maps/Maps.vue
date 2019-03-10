@@ -37,6 +37,13 @@
   </b-carousel>
   </div>
   </div>
+   <div>
+  <b-embed
+    type="iframe"
+    aspect="16by9"
+    <iframe width="825" height="25" src="https://www.youtube.com/embed/xD-qXkCJ9aw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+</div>
 </div>
    </b-container> 
 </template>

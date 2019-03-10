@@ -47,11 +47,16 @@
           <b-img center src="static/images/banka_banki_pari_vlogove_.jpg" class="img-thumbnail" alt="Center image" />
         <br>
         <br>  
-
     </div>
   </div>
+  <div>
+  <b-embed
+    type="iframe"
+    aspect="16by9"
+    <iframe width="1100" height="20" src="https://www.youtube.com/embed/BVdaFShTMlI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
 </div>
-
+</div>
 </b-container>
 </template>
 

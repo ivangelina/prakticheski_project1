@@ -3,10 +3,10 @@
   <div>
     <b-carousel
       id="carousel"
-      style="text-shadow: 2px 1px 2px #999;"
+      style="text-shadow: 2px 1px 2px #000;"
       controls
       indicators
-      background="static/images/office.jpg"
+      background=""
       :interval="1000"
       img-width="600" 
       img-height="300" 
