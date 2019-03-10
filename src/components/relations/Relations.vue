@@ -1,7 +1,6 @@
 <template>
 <b-container class="bv-example-row bv-example-row-flex-cols">
 <div class="container-fluid">
-  <br>
   <h3>ПОЛЕЗНИ ВРЪЗКИ</h3>
   <p> </p>
   <p>ВРЪЗКИ КЪМ ДЪРЖАВНИ ИНСТИТУЦИИ И БАНКИ</p>

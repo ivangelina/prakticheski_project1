@@ -1,8 +1,6 @@
 <template>
      <b-container class="bv-example-row bv-example-row-flex-cols">
      <div class="container-fluid">
-       <br>
-      
        <h4>ТЪРСЕНЕ НА АДРЕСИ В ГРАД ПЛОВДИВ, ГРАД СОФИЯ И ГРАД БУРГАС</h4>
       
       <div class="row">
@@ -11,8 +9,6 @@
         <div role="group" class="col-md-6"> 
       <b-form-input v-model="searchValue" size="sm" class="mr-sm-2" type="text" placeholder="Search"/>
       <b-button @click="searchMap" size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
-     
-      <br>
        <br>
       </div>
       </div> 
