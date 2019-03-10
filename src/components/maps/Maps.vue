@@ -1,6 +1,7 @@
 <template>
      <b-container class="bv-example-row bv-example-row-flex-cols">
      <div class="container-fluid">
+       <br>
        <h4>ТЪРСЕНЕ НА АДРЕСИ В ГРАД ПЛОВДИВ, ГРАД СОФИЯ И ГРАД БУРГАС</h4>
       
       <div class="row">
@@ -37,7 +38,7 @@
   <b-embed
     type="iframe"
     aspect="16by9"
-    <iframe width="825" height="25" src="https://www.youtube.com/embed/xD-qXkCJ9aw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="825" height="50" src="https://www.youtube.com/embed/xD-qXkCJ9aw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
 </div>
 </div>
