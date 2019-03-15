@@ -52,7 +52,7 @@
   <b-embed
     type="iframe"
     aspect="16by9"
-    <iframe width="1100" height="60" src="https://www.youtube.com/embed/BVdaFShTMlI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    <iframe width="1100" height="39" src="https://www.youtube.com/embed/BVdaFShTMlI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
   
 </div>

@@ -2,12 +2,20 @@
 <b-container class="bv-example-row bv-example-row-flex-cols">
 <div class="container-fluid">
   <h3>ИЗЧИСЛЯВАНЕ НА СУМАТА ЗА ЗАКУПУВАНЕ НА ЖИЛИЩЕН ИМОТ</h3>
+  <br>
   <div class="row">
-    <div role="group" class="col-md-2">
+    <div role="group" class="col-md-12">
+       <div>{{ new Date() | dateFormat('YYYY.MM.DD', dateFormatConfig) }}</div>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div role="group" class="col-md-3">
       <label for="inputLive">Жилищен имот</label>
       <b-form-input v-model="yardArea" type="text" placeholder="кв. м" />
     </div>
-    <div role="group" class="col-md-2">
+    <div role="group" class="col-md-3">
       <label for="inputLive">Цена на кв. м</label>
       <b-form-input v-model="price15" type="number" placeholder="цена лв." />
     </div>
@@ -17,21 +25,14 @@
     </div>
         <div role="group" class="col-md-3">
       </div>
-     <div role="group" class="col-md-2">
-      <form id="" method="" action="">
-       <a href="script: date()">ДАТА</a>
-       <p>
-         <input type="button" name="date" value="date" onclick="date()"/>
-       </p>
-       </form>
-     </div>
   </div>
-   <div class="row mt-2">
-    <div role="group" class="col-md-2">
+
+   <div class="row ">
+    <div role="group" class="col-md-3">
       <label for="inputLive">Гараж</label>
       <b-form-input v-model="yardArea" type="text" placeholder="кв. м" />
     </div>
-    <div role="group" class="col-md-2">
+    <div role="group" class="col-md-3">
       <label for="inputLive">Цена на кв. м</label>
       <b-form-input v-model="price17" type="number" placeholder="цена лв." />
     </div>
@@ -39,13 +40,16 @@
       <label for="inputLive">Стойност на гаража</label>
       <b-form-input v-model="price18" type="number" placeholder="цена лв." />
     </div>
+      <div role="group" class="col-md-3">
   </div>
-     <div class="row mt-2">
-    <div role="group" class="col-md-2">
+   </div>
+
+     <div class="row">
+    <div role="group" class="col-md-3">
       <label for="inputLive">Паркомясто</label>
       <b-form-input v-model="yardArea" type="text" placeholder="кв. м" />
     </div>
-    <div role="group" class="col-md-2">
+    <div role="group" class="col-md-3">
       <label for="inputLive">Цена на кв. м</label>
       <b-form-input v-model="price19" type="number" placeholder="цена лв." />
     </div>
@@ -55,18 +59,11 @@
     </div>
       <div role="group" class="col-md-3">
       </div>
-     <div role="group" class="col-md-2">
-       <form id="ch" method="" action="">
-       <a href="script: chas()">ЧАСОВНИК</a>
-       <p>
-         <input type="button" name="chasovnik" value="vreme" onclick="chas()"/>
-       </p>
-       </form>
-     </div>
   </div>
+  <br>
   
-  <div class="row mt-1">
-    <div role="group" class="col-md-7">
+  <div class="row ">
+    <div role="group" class="col-md-9">
       <label for="inputLive">ОБЩА СТОЙНОСТ - СУМА ОТ СТОЙНОСТТА НА ЖИЛИЩНИЯ ИМОТ, ГАРАЖА И ПАРКОМЯСТОТО</label>
       <b-form-input v-model="overAllPrice" type="text" readonly placeholder="цена лв." />
     </div>
@@ -84,7 +81,7 @@
     id="carousel"
     style="text-shadow: 0px 0px 2px #0"
     indicators
-    img-width="1000"
+    img-width="600"
     img-height="100"
   >
     <b-carousel-slide caption="Предложение №1 - апартаменти 75кв.м по 1200лв/м2, без гараж, само паркомясто 5000лв" img-src="static/images/4.jpg" alt="Center image" />
@@ -120,6 +117,23 @@ export default {
     },
     methods: {
        chas(){
+       var vreme = new Chas();
+       var hh = vreme.getHours();
+       var mm = vreme.getMinutes();
+       var ss = vreme.getSeconds(); 
+       
+       if (hh <= 9) hh = "0" + hh;
+       if (mm <= 9) mm = "0" + mm;
+       if (ss <= 9) ss = "0" + ss;
+
+       document.forms.ch.chasovnik.value = hh + ": " +mm+ ": " +ss;
+
+       window.setTimeout ("chas()", 1000);
+      }
+    },
+
+   methods: {
+       chas(){
        var vreme = new Date();
        var hh = vreme.getHours();
        var mm = vreme.getMinutes();
@@ -134,9 +148,29 @@ export default {
        window.setTimeout ("chas()", 1000);
       }
     },
+
    
+
 }
 </script>
+<script>
+  export default {
+    data () {
+      return {
+        dateFormatConfig: {
+          monthNames: [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+          ],
+          monthNamesShort: [
+            'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+          ]
+        }
+      };
+    }
+  };
+</script> 
 
 
 

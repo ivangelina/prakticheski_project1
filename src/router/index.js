@@ -85,5 +85,6 @@ export default new Router({
         footer: Footer,
       },
     },
+
   ],
 });

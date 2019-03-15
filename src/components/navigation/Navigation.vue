@@ -11,6 +11,7 @@
           <b-nav-item to="/maps">Карти</b-nav-item>
           <b-nav-item to="/housings">Актуални имоти</b-nav-item>
           <b-nav-item to="/relations">Полезни връзки</b-nav-item>
+          <b-nav-item to="/mymap">МАП</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </div>
