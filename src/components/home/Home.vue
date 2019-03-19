@@ -3,11 +3,10 @@
    <br>
        <h4>ПРИЛОЖЕНИЕ В ПОМОЩ НА БЪЛГАРСКИЯ ПРЕДПРИЕМАЧ И БЪЛГАРСКИЯ КУПУВАЧ</h4>
    <div class="row">
-     <br>
-     <div role="group" class="col-md-2"> 
+     <div role="group" class="col-md-0"> 
           </div> 
-<div role="group" class="col-md-8">
-<br> 
+<div role="group" class="col-md-12">
+ 
 <div>
   <b-carousel
     id="carousel-fade"
@@ -25,7 +24,7 @@
   </b-carousel>
 </div>
 </div>
- <div role="group" class="col-md-2"> 
+ <div role="group" class="col-md-0"> 
           </div> 
 </div>
 <br>
@@ -38,7 +37,6 @@
     </b-tabs>     
   </b-card>
   <div>
-    <br>
     <br>
   <b-embed
     type="iframe"
