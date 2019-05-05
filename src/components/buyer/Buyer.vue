@@ -5,8 +5,8 @@
     <br>
      <h2>ИЗЧИСЛЯВАНЕ НА СУМАТА ЗА ЗАКУПУВАНЕ НА ЖИЛИЩЕН ИМОТ</h2>
      <br>
-          <div class="row">
-            <div role="group" class="col-md-4">
+  <div class="row">
+     <div role="group" class="col-md-4">
               <label for="inputLive">Жилищен имот</label>
               <b-form-input v-model="yardArea" type="text" placeholder="кв. м" />
             </div>
@@ -20,8 +20,8 @@
             </div>
            </div>
 
-             <div class="row ">
-               <div role="group" class="col-md-4">
+   <div class="row ">
+      <div role="group" class="col-md-4">
                  <label for="inputLive">Гараж</label>
                <b-form-input v-model="yardArea" type="text" placeholder="кв. м" />
               </div>
@@ -35,8 +35,8 @@
               </div>
              </div>
 
-                <div class="row">
-                  <div role="group" class="col-md-4">
+    <div class="row">
+        <div role="group" class="col-md-4">
                    <label for="inputLive">Паркомясто</label>
                  <b-form-input v-model="yardArea" type="text" placeholder="кв. м" />
                </div>
@@ -52,7 +52,10 @@
 
       <div class="row ">
     <div role="group" class="col-md-12">
-      <label for="inputLive">ОБЩА СТОЙНОСТ - СУМА ОТ СТОЙНОСТТА НА ЖИЛИЩНИЯ ИМОТ, ГАРАЖА И ПАРКОМЯСТОТО</label>
+      <label for="inputLive">
+        <h3>ОБЩА СТОЙНОСТ - СУМА ОТ СТОЙНОСТТА НА ЖИЛИЩНИЯ ИМОТ, ГАРАЖА И ПАРКОМЯСТОТО</h3>
+
+        </label>
       <b-form-input v-model="overAllPrice" type="text" readonly placeholder="цена лв." />
     </div>
      </div> 
@@ -60,7 +63,7 @@
   <br>
   <div class="row">
 <div class="col-md-12 w-1000" style="background-color:white; align-center">
-  <h3> РАЗГЛЕДАЙ РАЙОНА ОКОЛО ИМОТА</h3>
+  <h3> РАЗГЛЕДАЙТЕ И СЕ ЗАПОЗНАЙТЕ С РАЙОНА ОКОЛО ИМОТА</h3>
              <br>     
               
           </div>
