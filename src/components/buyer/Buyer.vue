@@ -1,5 +1,7 @@
 <template>
+<div class="buyer-layout py-5">
 <b-container class="bv-example-row bv-example-row-flex-cols mt-5px">
+  <div class="buyer-overlay p-4">
   <br>
 <div class="container-flex mt-5px">
     <br>
@@ -78,8 +80,9 @@
             <a href="https://www.bgmaps.com/link/76D329F28CCDF0CECA91FDBCDEB9FDC5" target="_blank"></a>
           </div>
        </div>
+  </div>
    </b-container> 
-
+</div>
 </template>
 
 <script>
