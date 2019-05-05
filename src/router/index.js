@@ -5,6 +5,7 @@ import Navigation from '../components/navigation/Navigation';
 import Builder from '../components/builder/Builder';
 import Buyer from '../components/buyer/Buyer';
 import Home from '../components/home/Home';
+import GoogleMap from '../components/googlemap/GoogleMap';
 import Relations from '../components/relations/Relations';
 import DiscoverMovies from '../components/discover/DiscoverMovies';
 import Footer from '../components/footer/Footer';

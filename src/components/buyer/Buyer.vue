@@ -1,100 +1,82 @@
 <template>
-<b-container class="bv-example-row bv-example-row-flex-cols">
-<div class="container-fluid">
-  <h3>ИЗЧИСЛЯВАНЕ НА СУМАТА ЗА ЗАКУПУВАНЕ НА ЖИЛИЩЕН ИМОТ</h3>
+<b-container class="bv-example-row bv-example-row-flex-cols mt-5px">
   <br>
-  <div class="row">
+<div class="container-flex mt-5px">
+    <br>
+     <h2>ИЗЧИСЛЯВАНЕ НА СУМАТА ЗА ЗАКУПУВАНЕ НА ЖИЛИЩЕН ИМОТ</h2>
+     <br>
+          <div class="row">
+            <div role="group" class="col-md-4">
+              <label for="inputLive">Жилищен имот</label>
+              <b-form-input v-model="yardArea" type="text" placeholder="кв. м" />
+            </div>
+                  <div role="group" class="col-md-4">
+               <label for="inputLive">Цена на кв. м</label>
+              <b-form-input v-model="price15" type="number" placeholder="цена лв." />
+           </div>
+                  <div role="group" class="col-md-4">
+                <label for="inputLive">Стойност на жилищния имот</label>
+               <b-form-input v-model="price16" type="number" placeholder="цена лв." />
+            </div>
+           </div>
+
+             <div class="row ">
+               <div role="group" class="col-md-4">
+                 <label for="inputLive">Гараж</label>
+               <b-form-input v-model="yardArea" type="text" placeholder="кв. м" />
+              </div>
+                <div role="group" class="col-md-4">
+                <label for="inputLive">Цена на кв. м</label>
+               <b-form-input v-model="price17" type="number" placeholder="цена лв." />
+            </div>
+               <div role="group" class="col-md-4">
+                   <label for="inputLive">Стойност на гаража</label>
+                   <b-form-input v-model="price18" type="number" placeholder="цена лв." />
+              </div>
+             </div>
+
+                <div class="row">
+                  <div role="group" class="col-md-4">
+                   <label for="inputLive">Паркомясто</label>
+                 <b-form-input v-model="yardArea" type="text" placeholder="кв. м" />
+               </div>
+              <div role="group" class="col-md-4">
+                   <label for="inputLive">Цена на кв. м</label>
+                  <b-form-input v-model="price19" type="number" placeholder="цена лв." />
+               </div>
+              <div role="group" class="col-md-4">
+             <label for="inputLive">Стойност на паркомястото</label>
+              <b-form-input v-model="price20" type="number" placeholder="цена лв." />
+          </div>
+                </div>
+
+      <div class="row ">
     <div role="group" class="col-md-12">
-       <div>{{ new Date() | dateFormat('YYYY.MM.DD', dateFormatConfig) }}</div>
-    </div>
-  </div>
-  <br>
-
-  <div class="row">
-    <div role="group" class="col-md-3">
-      <label for="inputLive">Жилищен имот</label>
-      <b-form-input v-model="yardArea" type="text" placeholder="кв. м" />
-    </div>
-    <div role="group" class="col-md-3">
-      <label for="inputLive">Цена на кв. м</label>
-      <b-form-input v-model="price15" type="number" placeholder="цена лв." />
-    </div>
-    <div role="group" class="col-md-3">
-      <label for="inputLive">Стойност на жилищния имот</label>
-      <b-form-input v-model="price16" type="number" placeholder="цена лв." />
-    </div>
-        <div role="group" class="col-md-3">
-      </div>
-  </div>
-
-   <div class="row ">
-    <div role="group" class="col-md-3">
-      <label for="inputLive">Гараж</label>
-      <b-form-input v-model="yardArea" type="text" placeholder="кв. м" />
-    </div>
-    <div role="group" class="col-md-3">
-      <label for="inputLive">Цена на кв. м</label>
-      <b-form-input v-model="price17" type="number" placeholder="цена лв." />
-    </div>
-    <div role="group" class="col-md-3">
-      <label for="inputLive">Стойност на гаража</label>
-      <b-form-input v-model="price18" type="number" placeholder="цена лв." />
-    </div>
-      <div role="group" class="col-md-3">
-  </div>
-   </div>
-
-     <div class="row">
-    <div role="group" class="col-md-3">
-      <label for="inputLive">Паркомясто</label>
-      <b-form-input v-model="yardArea" type="text" placeholder="кв. м" />
-    </div>
-    <div role="group" class="col-md-3">
-      <label for="inputLive">Цена на кв. м</label>
-      <b-form-input v-model="price19" type="number" placeholder="цена лв." />
-    </div>
-    <div role="group" class="col-md-3">
-      <label for="inputLive">Стойност на паркомястото</label>
-      <b-form-input v-model="price20" type="number" placeholder="цена лв." />
-    </div>
-      <div role="group" class="col-md-3">
-      </div>
-  </div>
-  <br>
-  
-  <div class="row ">
-    <div role="group" class="col-md-9">
       <label for="inputLive">ОБЩА СТОЙНОСТ - СУМА ОТ СТОЙНОСТТА НА ЖИЛИЩНИЯ ИМОТ, ГАРАЖА И ПАРКОМЯСТОТО</label>
       <b-form-input v-model="overAllPrice" type="text" readonly placeholder="цена лв." />
     </div>
      </div> 
-    <br> 
-    
+  </div>
+  <br>
   <div class="row">
-     <div role="group" class="col-md-12">
-       <h3>АКТУАЛНИ ПРЕДЛОЖЕНИЯ</h3> 
-       </div> 
-        </div> 
-
-       <div role="group" class="col-md-12">
-  <b-carousel
-    id="carousel"
-    style="text-shadow: 0px 0px 2px #0"
-    indicators
-    img-width="600"
-    img-height="100"
-  >
-    <b-carousel-slide caption="Предложение №1 - апартаменти 75кв.м по 1200лв/м2, без гараж, само паркомясто 5000лв" img-src="static/images/4.jpg" alt="Center image" />
-    <b-carousel-slide caption="Предложение №2 - къщи 120кв.м по 1100лв/м2, с гараж 24кв.м по 800лв/м2" img-src="static/images/afd636d7a4d866ffa14bc64903956c0f.jpg" class="img-thumbnail" alt="Center image"/>
-    <b-carousel-slide caption="Предложение №3 - жилищна сграда 150кв.м по 1000лв/м2, без гараж" img-src="static/images/206464b2a576d5e83242a2618bef5abc.jpg" class="img-thumbnail" alt="Center image"/>
-  </b-carousel>
+<div class="col-md-12 w-1000" style="background-color:white; align-center">
+  <h3> РАЗГЛЕДАЙ РАЙОНА ОКОЛО ИМОТА</h3>
+             <br>     
+              
+          </div>
   </div>
-  
-  </div>
-</div>
-  </div>
-  </div>
+   <div class="row">
+        <br>
+            <div class="col-md-12 pt-5px" style="background-color:red;">
+              <h4>КАРТИ НА МЕСТОПОЛОЖЕНИЕТО НА ИМОТИТЕ</h4>
+             <br>     
+               <a href="https://www.google.com/maps/@?api=1&map_action=map" target="_blank">КАРТА НА ИМОТИТЕ В РЕПУБЛИКА БЪЛГАРИЯ</a>
+           <br>
+            <a href="https://www.bgmaps.com/link/76D329F28CCDF0CECA91FDBCDEB9FDC5" target="_blank"></a>
+          </div>
+       </div>
    </b-container> 
+
 </template>
 
 <script>
@@ -116,46 +98,7 @@ export default {
      
     },
    
-
-   methods: {
-       chas(){
-       var vreme = new Date();
-       var hh = vreme.getHours();
-       var mm = vreme.getMinutes();
-       var ss = vreme.getSeconds(); 
-       
-       if (hh <= 9) hh = "0" + hh;
-       if (mm <= 9) mm = "0" + mm;
-       if (ss <= 9) ss = "0" + ss;
-
-       document.forms.ch.chasovnik.value = hh + ": " +mm+ ": " +ss;
-
-       window.setTimeout ("chas()", 1000);
-      }
-    },
-
-   
-
 }
 </script>
-<script>
-  export default {
-    data () {
-      return {
-        dateFormatConfig: {
-          monthNames: [
-            'January', 'February', 'March', 'April', 'May', 'June',
-            'July', 'August', 'September', 'October', 'November', 'December'
-          ],
-          monthNamesShort: [
-            'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
-          ]
-        }
-      };
-    }
-  };
-</script> 
-
 
 
