@@ -72,7 +72,7 @@
   </div>
    <div class="row">
         <br>
-            <div class="col-md-12 pt-5px" style="background-color:red;">
+            <div class="col-md-12 pt-5px" style="background-color:whate;">
               <h4>КАРТИ НА МЕСТОПОЛОЖЕНИЕТО НА ИМОТИТЕ</h4>
              <br>     
                <a href="https://www.google.com/maps/@?api=1&map_action=map" target="_blank">КАРТА НА ИМОТИТЕ В РЕПУБЛИКА БЪЛГАРИЯ</a>
