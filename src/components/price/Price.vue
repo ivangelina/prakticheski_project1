@@ -1,5 +1,7 @@
 <template>
+<div class="builder-layout py-5">
 <div class="container pt-3">
+    <div class="builder-overlay p-4">
     <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -79,6 +81,8 @@
   </tbody>
 </table>
     </div>
+    </div>
+</div>
 </template>
 
 <script>
