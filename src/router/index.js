@@ -4,6 +4,7 @@ import Login from '../components/login';
 import Navigation from '../components/navigation/Navigation';
 import Builder from '../components/builder/Builder';
 import Buyer from '../components/buyer/Buyer';
+import Price from '../components/price/Price';
 import Home from '../components/home/Home';
 import GoogleMap from '../components/googlemap/GoogleMap';
 import Relations from '../components/relations/Relations';
@@ -45,6 +46,15 @@ export default new Router({
       components: {
         navigation: Navigation,
         default: Buyer,
+        footer: Footer,
+      },
+    },
+    {
+      path: '/price',
+      name: 'Price',
+      components: {
+        navigation: Navigation,
+        default: Price,
         footer: Footer,
       },
     },
