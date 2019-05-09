@@ -1,7 +1,10 @@
 <template>
-<div class="calculator-layout py-5">
+<div class="calculator-layout py-4">
+  <br>
+  <br>
 <b-container class="bv-example-row bv-example-row-flex-cols mt-5px">
    <div class="calculator-overlay p-4">
+     <br>
   <div class='calculator' onselectstart='return false'>
     <div class='display'>{{display}}</div>
     <div @click='clear' class='button darker'>C</div>
@@ -24,8 +27,13 @@
     <div @click='decimal' class='button darker'>.</div>
     <div @click='equal' class='button operator'>=</div>
   </div>
+  <br>
    </div>
+   <br>
+   <br>
 </b-container>
+<br>
+<br>
 </div>
 </template>
 
