@@ -55,8 +55,9 @@
       <div class="row ">
     <div role="group" class="col-md-12">
       <label for="inputLive">
-        <h3>ОБЩА СТОЙНОСТ - СУМА ОТ СТОЙНОСТТА НА ЖИЛИЩНИЯ ИМОТ, ГАРАЖА И ПАРКОМЯСТОТО</h3>
-
+      <p class="font-weight-bold">  
+        <h5>ОБЩА СТОЙНОСТ - СУМА ОТ СТОЙНОСТТА НА ЖИЛИЩНИЯ ИМОТ, ГАРАЖА И ПАРКОМЯСТОТО</h5>
+      </p>
         </label>
       <b-form-input v-model="overAllPrice" type="text" readonly placeholder="цена лв." />
     </div>
@@ -74,10 +75,16 @@
         <br>
             <div class="col-md-12 pt-5px" style="background-color:whate;">
               <h4>КАРТИ НА МЕСТОПОЛОЖЕНИЕТО НА ИМОТИТЕ</h4>
-             <br>     
+            
+           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<i class="material-icons" style="font-size:60px;color:blue;">map_action</i>
+ <p class="font-weight-bold, font-italic">
+   
                <a href="https://www.google.com/maps/@?api=1&map_action=map" target="_blank">КАРТА НА ИМОТИТЕ В РЕПУБЛИКА БЪЛГАРИЯ</a>
+
            <br>
-            <a href="https://www.bgmaps.com/link/76D329F28CCDF0CECA91FDBCDEB9FDC5" target="_blank"></a>
+ </p>       
           </div>
        </div>
   </div>
@@ -106,5 +113,6 @@ export default {
    
 }
 </script>
+
 
 
