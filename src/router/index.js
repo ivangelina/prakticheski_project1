@@ -6,7 +6,7 @@ import Builder from '../components/builder/Builder';
 import Buyer from '../components/buyer/Buyer';
 import Price from '../components/price/Price';
 import Home from '../components/home/Home';
-import GoogleMap from '../components/googlemap/GoogleMap';
+import Calculator from '../components/calculator/Calculator';
 import Relations from '../components/relations/Relations';
 import DiscoverMovies from '../components/discover/DiscoverMovies';
 import Footer from '../components/footer/Footer';
@@ -60,10 +60,10 @@ export default new Router({
     },
     {
       path: '/calculator',
-      name: 'Builder',
+      name: 'Calculator',
       components: {
         navigation: Navigation,
-        default: Builder,
+        default: Calculator,
         footer: Footer,
       },
     },

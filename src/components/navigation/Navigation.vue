@@ -8,8 +8,7 @@
           <b-nav-item to="/builder">Предприемач</b-nav-item>
           <b-nav-item to="/buyer">Купувач</b-nav-item>
           <b-nav-item to="/price">Ценова листа</b-nav-item>
-          <b-nav-item to="/calculator">Кредитен Калкулатор</b-nav-item>
-          <b-nav-item to="/googlemap">Карта</b-nav-item>
+          <b-nav-item to="/calculator">Калкулатор</b-nav-item>
           <b-nav-item to="/relations">Полезни връзки</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
