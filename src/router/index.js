@@ -7,6 +7,7 @@ import Buyer from '../components/buyer/Buyer';
 import Price from '../components/price/Price';
 import Home from '../components/home/Home';
 import Calculator from '../components/calculator/Calculator';
+import ConventorBg from '../components/conventorbg/ConventorBg';
 import Relations from '../components/relations/Relations';
 import DiscoverMovies from '../components/discover/DiscoverMovies';
 import Footer from '../components/footer/Footer';
@@ -67,7 +68,15 @@ export default new Router({
         footer: Footer,
       },
     },
-   
+    {
+      path: '/conventorbg',
+      name: 'ConventorBg',
+      components: {
+        navigation: Navigation,
+        default: ConventorBg,
+        footer: Footer,
+      },
+    },
     {
       path: '/relations',
       name: 'Relations',

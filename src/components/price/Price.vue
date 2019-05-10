@@ -1,5 +1,5 @@
 <template>
-<div class="price-layout py-5">
+<div class="price-layout py-1">
 <div class="container pt-3">
     <div class="price-overlay p-4">
     <table class="table">

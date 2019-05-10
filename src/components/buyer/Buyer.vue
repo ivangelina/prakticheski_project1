@@ -1,5 +1,5 @@
 <template>
-<div class="buyer-layout py-5">
+<div class="buyer-layout py-2">
 <b-container class="bv-example-row bv-example-row-flex-cols mt-5px">
   <div class="buyer-overlay p-4">
   <br>
