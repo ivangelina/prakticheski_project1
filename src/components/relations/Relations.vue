@@ -1,5 +1,6 @@
 <template>
 <b-container class="bv-example-row bv-example-row-flex-cols">
+  <br>
 <div class="container-fluid">
   <h3>ПОЛЕЗНИ ВРЪЗКИ</h3>
   <p> </p>
