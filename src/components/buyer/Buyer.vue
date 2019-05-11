@@ -1,5 +1,5 @@
 <template>
-<div class="buyer-layout py-2">
+<div class="buyer-layout py-5">
 <b-container class="bv-example-row bv-example-row-flex-cols mt-5px">
   <div class="buyer-overlay p-4">
   <br>
@@ -63,7 +63,7 @@
   </div>
   <br>
   <div class="row">
-<div class="col-md-12 w-100 mt-5">
+<div class="col-md-12 w-100 mt-3">
   <h4> РАЗГЛЕДАЙТЕ И СЕ ЗАПОЗНАЙТЕ С РАЙОНА ОКОЛО ИМОТА</h4>    
           </div>
   </div>
