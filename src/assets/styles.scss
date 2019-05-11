@@ -3,7 +3,10 @@
 // Import custom font from Google
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import "~bootstrap/scss/bootstrap";
-@import "./_card";
+@import "./card";
+@import "./forms";
+@import "./buyer";
+
 @import "~font-awesome/scss/font-awesome";
 
 html,body{

@@ -14,58 +14,56 @@
             </div>
                   <div role="group" class="col-md-4">
                <label for="inputLive">Цена на кв. м</label>
-              <b-form-input v-model="price15" type="number" placeholder="цена лв." />
+              <b-form-input v-model="priceYardArea" type="number" placeholder="цена лв." />
            </div>
                   <div role="group" class="col-md-4">
                 <label for="inputLive">Стойност на жилищния имот</label>
-               <b-form-input v-model="price16" type="number" placeholder="цена лв." />
+               <b-form-input v-model="calculatedYardAreaPrice" type="number" placeholder="цена лв." />
             </div>
            </div>
 
    <div class="row ">
       <div role="group" class="col-md-4">
                  <label for="inputLive">Гараж</label>
-               <b-form-input v-model="yardArea" type="text" placeholder="кв. м" />
+               <b-form-input v-model="garageArea" type="text" placeholder="кв. м" />
               </div>
                 <div role="group" class="col-md-4">
                 <label for="inputLive">Цена на кв. м</label>
-               <b-form-input v-model="price17" type="number" placeholder="цена лв." />
+               <b-form-input v-model="priceGarageArea" type="number" placeholder="цена лв." />
             </div>
                <div role="group" class="col-md-4">
                    <label for="inputLive">Стойност на гаража</label>
-                   <b-form-input v-model="price18" type="number" placeholder="цена лв." />
+                   <b-form-input v-model="calculatedGarageAreaPrice" type="number" placeholder="цена лв." />
               </div>
              </div>
 
     <div class="row">
         <div role="group" class="col-md-4">
                    <label for="inputLive">Паркомясто</label>
-                 <b-form-input v-model="yardArea" type="text" placeholder="кв. м" />
+                 <b-form-input v-model="parkArea" type="text" placeholder="кв. м" />
                </div>
               <div role="group" class="col-md-4">
                    <label for="inputLive">Цена на кв. м</label>
-                  <b-form-input v-model="price19" type="number" placeholder="цена лв." />
+                  <b-form-input v-model="priceParkArea" type="number" placeholder="цена лв." />
                </div>
               <div role="group" class="col-md-4">
              <label for="inputLive">Стойност на паркомястото</label>
-              <b-form-input v-model="price20" type="number" placeholder="цена лв." />
+              <b-form-input v-model="calculatedParkAreaPrice" type="number" placeholder="цена лв." />
           </div>
                 </div>
 
-      <div class="row ">
-    <div role="group" class="col-md-12">
-      <label for="inputLive">
-      <p class="font-weight-bold">  
-        <h5>ОБЩА СТОЙНОСТ - СУМА ОТ СТОЙНОСТТА НА ЖИЛИЩНИЯ ИМОТ, ГАРАЖА И ПАРКОМЯСТОТО</h5>
-      </p>
-        </label>
-      <b-form-input v-model="overAllPrice" type="text" readonly placeholder="цена лв." />
+      <div class="row justify-content-end">
+    <div role="group" class="col-md-4">
+      <div class="d-flex justify-content-between mt-4 align-items-center">
+        <div class="overall-label">ОБЩА СТОЙНОСТ</div>
+        <div class="overall-price">{{overAllPrice}}</div>
+      </div>
     </div>
      </div> 
   </div>
   <br>
   <div class="row">
-<div class="col-md-12 w-1000" style="background-color:white; align-center">
+<div class="col-md-12 w-100 mt-5">
   <h3> РАЗГЛЕДАЙТЕ И СЕ ЗАПОЗНАЙТЕ С РАЙОНА ОКОЛО ИМОТА</h3>
              <br>     
               
@@ -73,10 +71,10 @@
   </div>
    <div class="row">
         <br>
-            <div class="col-md-12 pt-5px" style="background-color:whate;">
+            <div class="col-md-12 pt-5 map-container">
               <h4>КАРТИ НА МЕСТОПОЛОЖЕНИЕТО НА ИМОТИТЕ</h4>
             
-           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+           
 
 <i class="material-icons" style="font-size:60px;color:blue;">map_action</i>
  <p class="font-weight-bold, font-italic">
@@ -97,18 +95,32 @@ export default {
   name: 'st-buyer',
   data () {
     return {
-     price16: '',
-      price18: '',
-      price20: '',
+      yardArea: '',
+      priceYardArea: '',
+      garageArea: '',
+      priceGarageArea: '',
+      parkArea: '',
+      priceParkArea: '',
       
     }
   },
    computed: {
        overAllPrice(){
-        const price = Number(this.price16) + Number(this.price18) + Number(this.price20);
+        const price = this.calculatedYardAreaPrice + this.calculatedGarageAreaPrice + this.calculatedParkAreaPrice;
+        return price;
+      },
+      calculatedYardAreaPrice(){
+        const price = Number(this.yardArea) * Number(this.priceYardArea);
+        return price;
+      },
+      calculatedGarageAreaPrice(){
+        const price = Number(this.garageArea) * Number(this.priceGarageArea);
+        return price;
+      },
+      calculatedParkAreaPrice() {
+        const price = Number(this.parkArea) * Number(this.priceParkArea);
         return price;
       }
-     
     },
    
 }
