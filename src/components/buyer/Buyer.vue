@@ -64,25 +64,15 @@
   <br>
   <div class="row">
 <div class="col-md-12 w-100 mt-5">
-  <h3> РАЗГЛЕДАЙТЕ И СЕ ЗАПОЗНАЙТЕ С РАЙОНА ОКОЛО ИМОТА</h3>
-             <br>     
-              
+  <h4> РАЗГЛЕДАЙТЕ И СЕ ЗАПОЗНАЙТЕ С РАЙОНА ОКОЛО ИМОТА</h4>    
           </div>
   </div>
    <div class="row">
-        <br>
-            <div class="col-md-12 pt-5 map-container">
+            <div class="col-md-12 pt-1 map-container">
               <h4>КАРТИ НА МЕСТОПОЛОЖЕНИЕТО НА ИМОТИТЕ</h4>
-            
-           
-
 <i class="material-icons" style="font-size:60px;color:blue;">map_action</i>
- <p class="font-weight-bold, font-italic">
-   
-               <a href="https://www.google.com/maps/@?api=1&map_action=map" target="_blank">КАРТА НА ИМОТИТЕ В РЕПУБЛИКА БЪЛГАРИЯ</a>
+    <a href="https://www.google.com/maps/@?api=1&map_action=map" target="_blank">КАРТА НА ИМОТИТЕ В РЕПУБЛИКА БЪЛГАРИЯ</a>
 
-           <br>
- </p>       
           </div>
        </div>
   </div>
