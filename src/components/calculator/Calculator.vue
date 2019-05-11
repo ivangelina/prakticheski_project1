@@ -138,7 +138,7 @@ export default {
 }
 
 .operator {
-  background-color: hsl(73, 60%, 60%);
+  background-color: hsl(210, 60%, 60%);
 }
 
 .darker {
