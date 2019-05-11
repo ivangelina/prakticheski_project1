@@ -1,5 +1,5 @@
 <template>
-<div class="calculator-layout py-4">
+<div class="calculator-layout py-5">
   <br>
   <br>
 <b-container class="bv-example-row bv-example-row-flex-cols mt-5px">
