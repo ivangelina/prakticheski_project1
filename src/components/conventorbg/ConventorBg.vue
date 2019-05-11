@@ -11,7 +11,6 @@
 <label for="bgn" class="currency"> 
 <span class="item-currency">BGN: </span> 
 <input  class="primary-btn" type="number" v-model="bgn" value="Convert!" />
-
 </label> 
 
 <label for="euro" class="currency"> 
@@ -21,16 +20,22 @@
 <input  class="primary-btn" type="button" value="Convert!" /> 
 </section> 
 </form> 
+<br>
   </div>
   <br>
-  <br>
+<br>
 </b-container>
 <br>
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </div>
-
 </template>
 
 
@@ -53,44 +58,3 @@ export default {
 }
 </script>
 
-<style>
-.content-form { 
-width: 100%; 
-margin: 5% auto;
- 
-background: #999; 
-padding: 5px 10px 10px; 
-border-radius: 15px; 
-box-shadow: 5px 5px 10px #808080, 5px 5px 10px #6793c1 inset; 
-} 
-.currency-value { 
-border: none; 
-padding: 5px; 
-border-radius: 5px; 
-} 
-.title{ 
-text-align: center; 
-} 
-.item-currency { 
-font-weight: 700; 
-} 
-.currency { 
-margin: auto; 
-padding-bottom: 15px; 
-}
-.items { 
-display: flex; 
-flex-direction: column; 
-justify-content: flex-start; 
-} 
-.primary-btn { 
-margin: auto; 
-border: none; 
-padding: 10px 30px; 
-border-radius: 10px; 
-background-color: #ffa000; 
-color: #FFFFFF; 
-font-weight: 700; 
-}
-
-</style>
