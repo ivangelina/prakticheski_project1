@@ -1,7 +1,7 @@
 <template>
-<div class="buyer-layout py-5">
+<div class="buyer-layout py-3">
 <b-container class="bv-example-row bv-example-row-flex-cols mt-5px">
-  <div class="buyer-overlay p-4">
+  <div class="buyer-overlay p-2">
   <br>
 <div class="container-flex mt-5px">
     <br>
@@ -70,8 +70,10 @@
    <div class="row">
             <div class="col-md-12 pt-1 map-container">
               <h4>КАРТИ НА МЕСТОПОЛОЖЕНИЕТО НА ИМОТИТЕ</h4>
-<i class="material-icons" style="font-size:60px;color:blue;">map_action</i>
-    <a href="https://www.google.com/maps/@?api=1&map_action=map" target="_blank">КАРТА НА ИМОТИТЕ В РЕПУБЛИКА БЪЛГАРИЯ</a>
+             
+  <iframe height="300px" width="100%" src="" name="iframe_a"></iframe>
+
+<p><a href="https://www.bgmaps.com/" target="iframe_a">Map</a></p>
 
           </div>
        </div>
@@ -115,6 +117,7 @@ export default {
    
 }
 </script>
+
 
 
 

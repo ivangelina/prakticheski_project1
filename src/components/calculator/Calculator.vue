@@ -1,5 +1,5 @@
 <template>
-<div class="calculator-layout py-5">
+<div class="calculator-layout py-3">
   <br>
   <br>
 <b-container class="bv-example-row bv-example-row-flex-cols mt-5px">
@@ -19,7 +19,7 @@
     <div @click='append(5)' class='button'>5</div>
     <div @click='append(6)' class='button'>6</div>
     <div @click='subtract' class='button operator'>-</div>
-    <div @click='append(1)' class='button'>1</div>
+    <div @click='append(1)' class3='button'>1</div>
     <div @click='append(2)' class='button'>2</div>
     <div @click='append(3)' class='button'>3</div>
     <div @click='add' class='button operator'>+</div>
@@ -27,10 +27,30 @@
     <div @click='decimal' class='button darker'>.</div>
     <div @click='equal' class='button operator'>=</div>
   </div>
-  <br>
+   <br>
+   <br>
+  <div class="row">
+    <h4>Изчисляване на проста лихва, която следва да бъде върната при получен кредит</h4>
+     <div role="group" class="col-md-3">
+              <label for="inputLive">Кредит-получена сума</label>
+              <b-form-input v-model="yardArea" type="text" placeholder="лв" />
+            </div>
+                  <div role="group" class="col-md-3">
+               <label for="inputLive">Лихва - проста</label>
+              <b-form-input v-model="priceYardArea" type="number" placeholder="процент" />
+           </div>
+            <div role="group" class="col-md-3">
+               <label for="inputLive">Години</label>
+              <b-form-input v-model="priceYardArea_1" type="number" placeholder="брой" />
+           </div>
+                  <div role="group" class="col-md-">
+                <label for="inputLive">Лихва за връщане</label>
+               <b-form-input v-model="calculatedYardAreaPrice" type="number" placeholder="цена лв." />
+            </div>
+           </div>
+           <br>
+        <h6>Забележка: сумата за връщане се получава, като към Кредит - получена сума се добави изчислената лихва!</h6>    
    </div>
-   <br>
-   <br>
 </b-container>
 <br>
 <br>
@@ -44,7 +64,10 @@ export default {
       previous: null,
       display: 0,
       operator: null,
-      operatorClicked: false
+      operatorClicked: false,
+       yardArea: '',
+      priceYardArea: '',
+      priceYardArea_1:''
     };
   },
   methods: {
@@ -100,7 +123,13 @@ export default {
       this.previous = null;
       this.operatorClicked = true;
     }
-  }
+  },
+    computed:{
+     calculatedYardAreaPrice(){
+        const price = Number(this.yardArea) * Number(this.priceYardArea)*Number(this.priceYardArea_1);
+        return price;
+      }
+    },
 };
 </script>
 

@@ -1,78 +1,86 @@
 <template>
-<b-container class="bv-example-row bv-example-row-flex-cols">
-   <br>
-       <h4>ПРИЛОЖЕНИЕ В ПОМОЩ НА БЪЛГАРСКИЯ ПРЕДПРИЕМАЧ И БЪЛГАРСКИЯ КУПУВАЧ</h4>
-   <div class="row">
-     <div role="group" class="col-md-0"> 
-          </div> 
-<div role="group" class="col-md-12">
- 
-<div>
-  <b-carousel
-    id="carousel-fade"
-    style="text-shadow: 0px 0px 30px #000"
-    fade
-    indicators
-    img-width="1100"
-    img-height="1000"
-  >
+<div class="buyer-layout py-5">
+<b-container class="bv-example-row bv-example-row-flex-cols mt-5px">
+  <div class="buyer-overlay p-4">
+  <h5>Приложение в помощ на български предприемач и българския купувач</h5>
   <br>
-    <b-carousel-slide caption="Жилищна сграда" img-src="/static/images/residental.jpg" alt="Center image"/>
-    <b-carousel-slide caption="Офис сграда" img-src="/static/images/office.jpg" alt="Center image" />
-    <b-carousel-slide caption="Промишлена сграда" img-src="/static/images/industrial.JPG" alt="Center image"/>
-    <b-carousel-slide caption="Търговска сграда" img-src="/static/images/shopping.jpg" alt="Center image"/>
-  </b-carousel>
-</div>
-</div>
- <div role="group" class="col-md-0"> 
-          </div> 
-</div>
-<br>
+  <div>
+    <b-carousel
+      id="carousel-1"
+      v-model="slide"
+      :interval="4000"
+      controls
+      indicators
+      background="#ababab"
+      img-width="1024"
+      img-height="480"
+      style="text-shadow: 1px 1px 2px #333;"
+      @sliding-start="onSlideStart"
+      @sliding-end="onSlideEnd"
+    >
+      <!-- Text slides with image -->
+      <b-carousel-slide
+        caption="ХАН ОМУРТАГ"
+        text="Човек и добре да живее, умира и друг се ражда. Нека роденият по-късно, като гледа този надпис, да си спомня за оногова, който го я направил."
+        img-src="https://picsum.photos/1024/480/?image=817"
+      ></b-carousel-slide>
 
+      <!-- Slides with custom text -->
+      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=84">
+        <h1>Човек и добре да живее, умира и друг се ражда. Нека роденият по-късно, като гледа този надпис, да си спомня за оногова, който го я направил.</h1>
+      </b-carousel-slide>
 
-  <b-card no-body>
+      <!-- Slides with image only -->
+      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=817"></b-carousel-slide>
+
+      <!-- Slides with img slot -->
+      <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
+      <b-carousel-slide>
+        <img
+          slot="img"
+          class="d-block img-fluid w-100"
+          width="1024"
+          height="480"
+          src="https://picsum.photos/1024/480/?image=84"
+          alt="image slot"
+        >
+      </b-carousel-slide>
+
+      <!-- Slide with blank fluid image to maintain slide aspect ratio -->
+     
+    </b-carousel>
+ <p class="mt-4">
+      Slide #: {{ slide }}<br>
+      Sliding: {{ sliding }}
+    </p>
+  </div>
+    <b-card no-body>
     <b-tabs card>
-      <b-tab title="Секция Предприемач" active>Изчисляване на всички разходи за построяването на строителен обект</b-tab>
-      <b-tab title="Секция Купувач">Тази секция ще бъде разработена на по-късен етап</b-tab>
+      <b-tab title="Секция Предприемач" active>Изчисляване на всички разходи за построяването на строителен обект, включително закупуване на дворно място, такси за разрешителни, сума за СН, сума за построяване (част Груб строеж, част Архитектура, част ВК, част Електро, част ОВК, част Вертикална планировка, част Озеленяване, част Ограда и други) и въвеждане в експлоатация</b-tab>
+      <b-tab title="Секция Купувач">Изчисляване на сумата за закупуване на жилищен имот, включително сума за жилище, сума за гараж и сума за паркомясто,като клиентът може да разгледа района около имота от приложената карта</b-tab>
     </b-tabs>     
   </b-card>
-  <div>
-    <br>
-  <b-embed
-    type="iframe"
-    aspect="16by9"
-    <iframe width="1100" height="27" src="https://www.youtube.com/embed/NPuxjer_OJg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
-    </iframe>
-  
-</div>
-</div>
-</div>
-</b-container>
+
+  </div>
+  </b-container>
+  </div>
 </template>
 
 <script>
-export default {
-  name: 'st-builder',
-  data () {
-    return {
-      selectedBuilding: '1',
-      buildingOptions: [
-        { value: null, text: 'Избери жилищна сграда' },
-        { value: '1', text: 'Жилищна сграда' },
-        { value: '2', text: 'Търговска сграда' },
-        { value: '3', text: 'Офис сграда' },
-        { value: '4', text: 'Промишлена сграда'}
-      ],
-      selectedFloorCount: '1',
-      floorsOptions: [
-        { value: null, text: 'Избери брой етажи' },
-        { value: '1', text: '1' },
-        { value: '2', text: '2' },
-        { value: '3', text: '3' },
-        { value: '4', text: '4'}
-      ]
+  export default {
+    data() {
+      return {
+        slide: 0,
+        sliding: null
+      }
+    },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
     }
-  },
-}
+  }
 </script>
-
