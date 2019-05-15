@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <loader></loader>
-        <google-map />
     <router-view name="navigation"></router-view>
     <router-view></router-view>
     <router-view name="footer"></router-view>

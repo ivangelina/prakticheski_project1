@@ -7,6 +7,7 @@ import Buyer from '../components/buyer/Buyer';
 import Price from '../components/price/Price';
 import Home from '../components/home/Home';
 import Calculator from '../components/calculator/Calculator';
+import WorkSmr from '../components/worksmr/WorkSmr';
 import ConventorBg from '../components/conventorbg/ConventorBg';
 import Relations from '../components/relations/Relations';
 import DiscoverMovies from '../components/discover/DiscoverMovies';
@@ -65,6 +66,15 @@ export default new Router({
       components: {
         navigation: Navigation,
         default: Calculator,
+        footer: Footer,
+      },
+    },
+    {
+      path: '/worksmr',
+      name: 'WorkSmr',
+      components: {
+        navigation: Navigation,
+        default: WorkSmr,
         footer: Footer,
       },
     },

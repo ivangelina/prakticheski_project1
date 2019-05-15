@@ -1,5 +1,7 @@
 <template>
+<div class="buyer-layout py-5">
 <b-container class="bv-example-row bv-example-row-flex-cols">
+  <div class="buyer-overlay p-5">
   <br>
 <div class="container-fluid">
   <h3>ПОЛЕЗНИ ВРЪЗКИ</h3>
@@ -49,16 +51,10 @@
         <br>  
     </div>
   </div>
-  <div>
-  <b-embed
-    type="iframe"
-    aspect="16by9"
-    <iframe width="1100" height="39" src="https://www.youtube.com/embed/BVdaFShTMlI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    </iframe>
-  
 </div>
-</div>
+  </div>
 </b-container>
+</div>
 </template>
 
 <script>
