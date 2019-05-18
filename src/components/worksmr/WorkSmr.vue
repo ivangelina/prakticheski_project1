@@ -1,8 +1,8 @@
 <template>
 <div class="buyer-layout py-5">
-<b-container class="bv-example-row bv-example-row-flex-cols mt-5px">
+<b-container class="bv-example-row bv-example-row-flex-cols mt-5">
   <div class="buyer-overlay p-4">
-<div class="container-flex mt-5px">
+<div class="container-flex mt-5">
      <h3>Анализна цена за боядисване с латекс</h3>
      <div class="row">
         <h5>1.МАТЕРИАЛИ</h5> 
@@ -18,7 +18,7 @@
            </div>
                   <div role="group" class="col-md-4">
                 <label for="inputLive">Стойност за 1кв.м</label>
-               <b-form-input v-model="calculatedYardAreaPrice" type="number" placeholder="цена лв." />
+               <b-form-input v-model="calculatedYardAreaPrice" readonly type="number" placeholder="цена лв." />
             </div>
            </div>
          <div class="row">
@@ -31,11 +31,11 @@
             </div>
                   <div role="group" class="col-md-4">
                <label for="inputLive">Сума мат.</label>
-              <b-form-input v-model="priceYardArea_1" type="number" placeholder="цена лв." />
+              <b-form-input v-model="calculatedYardAreaPrice" readonly type="number" placeholder="цена лв." />
            </div>
                   <div role="group" class="col-md-4">
                 <label for="inputLive">Стойност на Дост-скл.р-ди</label>
-               <b-form-input v-model="calculatedYardAreaPrice_1" type="number" placeholder="цена лв." />
+               <b-form-input v-model="calculatedYardAreaPrice_1" readonly type="number" placeholder="цена лв." />
             </div>
            </div>  
            <br>
@@ -54,7 +54,7 @@
             </div>
                <div role="group" class="col-md-4">
                    <label for="inputLive">Стойност Труд</label>
-                   <b-form-input v-model="calculatedGarageAreaPrice" type="number" placeholder="цена лв." />
+                   <b-form-input v-model="calculatedGarageAreaPrice" readonly type="number" placeholder="цена лв." />
               </div>
              </div>
               <div class="row">
@@ -68,11 +68,11 @@
               </div>
                 <div role="group" class="col-md-4">
                 <label for="inputLive">Стойност труд</label>
-               <b-form-input v-model="priceGarageArea_1" type="number" placeholder="лв." />
+               <b-form-input  v-model="calculatedGarageAreaPrice" readonly type="number" placeholder="лв." />
             </div>
                <div role="group" class="col-md-4">
                    <label for="inputLive">Стойност Доп.р-ди труд</label>
-                   <b-form-input v-model="calculatedGarageAreaPrice_1" type="number" placeholder="цена лв." />
+                   <b-form-input v-model="calculatedGarageAreaPrice_1" readonly type="number" placeholder="цена лв." />
               </div>
              </div>
              <br>
@@ -86,11 +86,11 @@
                </div>
               <div role="group" class="col-md-4">
                    <label for="inputLive">Обща цена с ДР</label>
-                  <b-form-input v-model="priceParkArea" type="number" placeholder="цена лв." />
+                  <b-form-input v-model="calculatedOverallPrice" readonly type="number" placeholder="цена лв." />
                </div>
               <div role="group" class="col-md-4">
              <label for="inputLive">Стойност на печалба</label>
-              <b-form-input v-model="calculatedParkAreaPrice" type="number" placeholder="лв." />
+              <b-form-input v-model="calculatedIncome" readonly type="number" placeholder="лв." />
           </div>
                 </div>
 
@@ -130,27 +130,40 @@ export default {
   },
    computed: {
        overAllPrice(){
-        const price = this.calculatedYardAreaPrice+this.calculatedYardAreaPrice_1 + this.calculatedGarageAreaPrice+ this.calculatedGarageAreaPrice_1+ this.calculatedParkAreaPrice;
+        const price = (Number(this.calculatedOverallPrice) + Number(this.calculatedIncome)).toFixed(2);
         return price;
       },
       calculatedYardAreaPrice(){
-        const price = Number(this.yardArea) * Number(this.priceYardArea);
+        const price = (Number(this.yardArea) * Number(this.priceYardArea)).toFixed(2);
         return price;
       },
       calculatedYardAreaPrice_1(){
-        const price = Number(this.yardArea_1) * Number(this.priceYardArea_1);
+        const price = (Number(this.yardArea_1) * Number(this.calculatedYardAreaPrice) / 100).toFixed(2);
         return price;
       },
       calculatedGarageAreaPrice(){
-        const price = Number(this.garageArea) * Number(this.priceGarageArea);
+        const price = (Number(this.garageArea) * Number(this.priceGarageArea)).toFixed(2);
         return price;
       },
       calculatedGarageAreaPrice_1(){
-        const price = Number(this.garageArea_1) * Number(this.priceGarageArea_1);
+        const price = (Number(this.garageArea_1) * Number(this.calculatedGarageAreaPrice) / 100).toFixed(2);
         return price;
       },
       calculatedParkAreaPrice() {
-        const price = Number(this.parkArea) * Number(this.priceParkArea);
+        const price = (Number(this.parkArea) * Number(this.priceParkArea)).toFixed(2);
+        return price;
+      },
+      calculatedOverallPrice(){
+         const price = (
+          Number(this.calculatedYardAreaPrice) + 
+          Number(this.calculatedYardAreaPrice_1) +
+          Number(this.calculatedGarageAreaPrice) +
+          Number(this.calculatedGarageAreaPrice_1)
+         ).toFixed(2);
+        return price;
+      },
+      calculatedIncome(){
+        const price = (Number(this.parkArea) * Number(this.calculatedOverallPrice) / 100).toFixed(2);
         return price;
       }
     },

@@ -1,6 +1,7 @@
 import mutations from './mutation-types';
 import actions from './action-types';
 import dataService from '../api/data-service';
+import graphQlService from '../api/graphql-service';
 
 export default {
   [actions.GET_TRENDING_MOVIES]({commit}, page) {
@@ -126,4 +127,18 @@ export default {
       },
     );
   },
+  [actions.GET_BUILDINGS]({commit}, params= "_id buildingname title area price description location") {
+    commit(mutations.SET_LOADER, true);
+    graphQlService.getBuildingsList(
+        params,
+        (response) => {
+            commit(mutations.SET_LOADER, false);
+            commit(mutations.SET_BUILDINGS_LIST, response.data.buildings);
+        },
+        (error) => {
+            commit(mutations.SET_LOADER, false);
+            console.log(error);
+        }
+    )
+},
 };

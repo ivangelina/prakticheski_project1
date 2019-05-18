@@ -1,7 +1,7 @@
 <template> 
 <div class="conventorbg-layout py-5">
     <br>
-<b-container class="bv-example-row bv-example-row-flex-cols mt-5px">
+<b-container class="bv-example-row bv-example-row-flex-cols my-5">
     <br>
   <div class="conventorbg-overlay p-4">
   <br>
@@ -24,17 +24,9 @@
   </div>
   <br>
 <br>
+
 </b-container>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+ 
 </div>
 </template>
 
