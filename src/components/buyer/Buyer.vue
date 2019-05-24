@@ -69,10 +69,8 @@
   </div>
    <div class="row">
             <div class="col-md-12 pt-1 map-container">
-              <h4>КАРТИ НА МЕСТОПОЛОЖЕНИЕТО НА ИМОТИТЕ</h4>
-             
+              <h4>КАРТИ НА МЕСТОПОЛОЖЕНИЕТО НА ИМОТИТЕ</h4>   
   <iframe height="300px" width="100%" src="" name="iframe_a"></iframe>
-
 <p><a href="https://www.bgmaps.com/" target="iframe_a">Map</a></p>
 
           </div>
