@@ -109,7 +109,7 @@
             <div class="col-md-12 pt-1 map-container">
               <h4>СТРОИТЕЛСТВО - СТАРТИРАНЕ И ЗАВЪРШВАНЕ НА ЖИЛИЩНА СГРАДА</h4>
              
- <iframe width="853" height="480" src="https://www.youtube.com/embed/ZuJ88ybawms" 
+ <iframe width="1020" height="480" src="https://www.youtube.com/embed/ZuJ88ybawms" 
  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
   picture-in-picture" allowfullscreen></iframe>
 
