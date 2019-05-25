@@ -1,10 +1,11 @@
 <template>
-<div class="price-layout py-5">
+<div class="price-layout py-4">
   <div class="container h-100">
-     <div class="price-overlay p-5">
+     <div class="price-overlay p-3">
        <h1>УЕБ ПРИЛОЖЕНИЕ </h1>
        <h4>В ПОМОЩ НА БЪЛГАРСКИЯ ПРЕДПРИЕМАЧ И БЪЛГАРСКИЯ КУПУВАЧ</h4>
-       <h6>Влезте в приложението, като задължително запишете име и парола!</h6>
+       <p style="font-size:large; font-style: italic; color: red">Влезте в приложението,
+          като задължително запишете име и парола!</p>
        <br>
     <div class="row justify-content-center align-items-center h-200 border: 10px solid #256">
       <div class="col-md-5 col-lg-3">
@@ -38,18 +39,18 @@
         </b-card>
         <br>
           <div>
-            <h6>"Човек и добре да живее, умира и друг се ражда.
+            <p style="font-size:large; font-style: italic; color: blue">
+            "Човек и добре да живее, умира и друг се ражда.
                Нека роденият по-късно, като гледа този надпис,
-                да си спомня за оногова, който го я направил."</h6>
+                да си спомня за оногова, който го я направил."
+            </p>
+           <p style="font-size:large; font-style: italic; color: blue">ХАН ОМУРТАГ</p>
           </div>
-           <div>
-            <h2>ХАН ОМУРТАГ</h2>
-          </div>
+          </div>     
       </div>
     </div>
      </div>
   </div>
-</div>
 </template>
 
 <script>
