@@ -2,6 +2,10 @@
 <div class="price-layout py-5">
   <div class="container h-100">
      <div class="price-overlay p-5">
+       <h1>УЕБ ПРИЛОЖЕНИЕ </h1>
+       <h4>В ПОМОЩ НА БЪЛГАРСКИЯ ПРЕДПРИЕМАЧ И БЪЛГАРСКИЯ КУПУВАЧ</h4>
+       <h6>Влезте в приложението, като задължително запишете име и парола!</h6>
+       <br>
     <div class="row justify-content-center align-items-center h-200 border: 10px solid #256">
       <div class="col-md-5 col-lg-3">
         <b-card>
@@ -32,12 +36,19 @@
             <b-button type="submit" variant="primary" block>ВХОД</b-button>
           </b-form>
         </b-card>
+        <br>
+          <div>
+            <h6>"Човек и добре да живее, умира и друг се ражда.
+               Нека роденият по-късно, като гледа този надпис,
+                да си спомня за оногова, който го я направил."</h6>
+          </div>
+           <div>
+            <h2>ХАН ОМУРТАГ</h2>
+          </div>
       </div>
     </div>
      </div>
   </div>
-  <br>
-  <br>
 </div>
 </template>
 
@@ -60,8 +71,4 @@
     },
   };
 </script>
-<style lang="scss">
-  label {
-    color: #110000;
-  }
-</style>
+
