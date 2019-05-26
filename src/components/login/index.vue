@@ -72,4 +72,18 @@
     },
   };
 </script>
+<style>
+ h1 {
+        padding: 0;
+        margin-top: 0;
+        color: brown;
+        font-style: bold;
+    }
+  h4 {
+        padding: 0;
+        margin-top: 0;
+        color: brown;
+        font-style: bold;
+    }
+</style>
 
