@@ -98,3 +98,11 @@
     }
   }
 </script>
+<style>
+h1 {
+        padding: 0;
+        margin-top: 0;
+        color: white;
+        font-style: bold;
+    }
+</style>
