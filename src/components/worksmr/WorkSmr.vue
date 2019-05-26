@@ -1,8 +1,8 @@
 <template>
-<div class="buyer-layout py-5">
-<b-container class="bv-example-row bv-example-row-flex-cols mt-5">
-  <div class="buyer-overlay p-4">
-<div class="container-flex mt-5">
+<div class="buyer-layout py-1">
+<b-container class="bv-example-row bv-example-row-flex-cols mt-2">
+  <div class="buyer-overlay p-2">
+<div class="container-flex mt-2">
      <h3>Анализна цена за боядисване с латекс</h3>
      <div class="row">
         <h5>1.МАТЕРИАЛИ</h5> 

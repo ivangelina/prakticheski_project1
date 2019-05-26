@@ -11,8 +11,8 @@
     style="text-shadow: 0px 0px 30px #000"
     fade
     indicators
-    img-width="620"
-    img-height="300">
+    img-width=""
+    img-height="">
     <b-carousel-slide caption="Жилищна сграда" img-src="/static/images/residental.jpg"  class="img-thumbnail"  alt="Center image"/>
     <b-carousel-slide caption="Офис сграда" img-src="/static/images/office.jpg" class="img-thumbnail"  alt="Center image" />
     <b-carousel-slide caption="Търговска сграда" img-src="/static/images/shopping.jpg" class="img-thumbnail" alt="Center image"/>
