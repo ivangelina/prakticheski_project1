@@ -4,7 +4,7 @@
      <div class="price-overlay p-3">
        <h1>УЕБ ПРИЛОЖЕНИЕ </h1>
        <h4>В ПОМОЩ НА БЪЛГАРСКИЯ ПРЕДПРИЕМАЧ И БЪЛГАРСКИЯ КУПУВАЧ</h4>
-       <p style="font-size:large; font-style: italic; color: red">Влезте в приложението,
+       <p style="font-size:large; font-style: italic; color: red; font-weight: !important">Влезте в приложението,
           като задължително запишете име и парола!</p>
        <br>
     <div class="row justify-content-center align-items-center h-200 border: 10px solid #256">
@@ -39,12 +39,12 @@
         </b-card>
         <br>
           <div>
-            <p style="font-size:large; font-style: italic; color: blue">
+            <p style="font-size:large; font-style: italic; color: blue; font-weight: !important">
             "Човек и добре да живее, умира и друг се ражда.
                Нека роденият по-късно, като гледа този надпис,
                 да си спомня за оногова, който го я направил."
             </p>
-           <p style="font-size:large; font-style: italic; color: blue">ХАН ОМУРТАГ</p>
+           <p style="font-size:large; font-style: italic; color: blue; font-weight: !important">ХАН ОМУРТАГ</p>
           </div>
           </div>     
       </div>
