@@ -5,7 +5,7 @@
        <h1>УЕБ ПРИЛОЖЕНИЕ </h1>
        <h4>В ПОМОЩ НА БЪЛГАРСКИЯ ПРЕДПРИЕМАЧ И БЪЛГАРСКИЯ КУПУВАЧ</h4>
 <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-6">
            <b-carousel
     id="carousel-fade"
     style="text-shadow: 0px 0px 30px #000"
@@ -13,12 +13,26 @@
     indicators
     img-width=""
     img-height="">
-    <b-carousel-slide caption="Жилищна сграда" img-src="/static/images/residental.jpg"  class="img-thumbnail"  alt="Center image"/>
-    <b-carousel-slide caption="Офис сграда" img-src="/static/images/office.jpg" class="img-thumbnail"  alt="Center image" />
-    <b-carousel-slide caption="Търговска сграда" img-src="/static/images/shopping.jpg" class="img-thumbnail" alt="Center image"/>
-    <b-carousel-slide caption="Промишлена сграда" img-src="/static/images/industrial.JPG" class="img-thumbnail" alt="Center image"/>
+    <b-carousel-slide caption="УЕБ ПРИЛОЖЕНИЕ" img-src="https://picsum.photos/1024/480/?image=817"  class="img-thumbnail"  alt="Center image"/>
+    <b-carousel-slide caption="УЕБ ПРИЛОЖЕНИЕ" img-src="https://picsum.photos/1024/480/?image=84" class="img-thumbnail"  alt="Center image" />
+    <b-carousel-slide caption="УЕБ ПРИЛОЖЕНИЕ" img-src="https://picsum.photos/1024/480/?image=817" class="img-thumbnail" alt="Center image"/>
+    <b-carousel-slide caption="УЕБ ПРИЛОЖЕНИЕ" img-src="https://picsum.photos/1024/480/?image=84" class="img-thumbnail" alt="Center image"/>
   </b-carousel>
         </div>
+      <div class="col-md-6">  
+         <b-carousel
+    id="carousel-fade"
+    style="text-shadow: 0px 0px 30px #000"
+    fade
+    indicators
+    img-width=""
+    img-height="">
+    <b-carousel-slide caption="УЕБ ПРИЛОЖЕНИЕ" img-src="https://picsum.photos/1024/480/?image=84"  class="img-thumbnail"  alt="Center image"/>
+    <b-carousel-slide caption="УЕБ ПРИЛОЖЕНИЕ" img-src="https://picsum.photos/1024/480/?image=817" class="img-thumbnail"  alt="Center image" />
+    <b-carousel-slide caption="УЕБ ПРИЛОЖЕНИЕ" img-src="https://picsum.photos/1024/480/?image=84" class="img-thumbnail" alt="Center image"/>
+    <b-carousel-slide caption="УЕБ ПРИЛОЖЕНИЕ" img-src="https://picsum.photos/1024/480/?image=817" class="img-thumbnail" alt="Center image"/>
+  </b-carousel>
+      </div>
      </div>
      <br>
        <p style="font-size:large; font-style: italic; color: blue; font-weight: !important">Влезте в приложението,
@@ -96,5 +110,6 @@
         font-style: bold;
     }
 </style>
+
 
 

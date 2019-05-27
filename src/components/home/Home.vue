@@ -24,18 +24,20 @@
         text="Човек и добре да живее, умира и друг се ражда.
          Нека роденият по-късно, като гледа този надпис,
           да си спомня за оногова, който го я направил."
-        img-src="https://picsum.photos/1024/480/?image=817"
+        img-src="https://picsum.photos/1024/350/?image=817"
       ></b-carousel-slide>
 
       <!-- Slides with custom text -->
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=84">
+      <b-carousel-slide img-src="https://picsum.photos/1024/350/?image=84">
         <h1>Човек и добре да живее, умира и друг се ражда. 
           Нека роденият по-късно, като гледа този надпис, 
           да си спомня за оногова, който го я направил.</h1>
       </b-carousel-slide>
 
       <!-- Slides with image only -->
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=817"></b-carousel-slide>
+      <b-carousel-slide img-src="https://picsum.photos/1024/350/?image=620">
+       <h3>МОСТОВЕ ГРАДИХ, ДЕТО ДА СЪБИРАТ ЧОВЕК С ЧОВЕКА И МАНАСТИРИ, ДЕТО ДА ГО СЪБИРАТ С БОГА.</h3>
+      </b-carousel-slide>
 
       <!-- Slides with img slot -->
       <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
@@ -45,9 +47,10 @@
           class="d-block img-fluid w-100"
           width="1024"
           height="480"
-          src="https://picsum.photos/1024/480/?image=84"
+          src="https://picsum.photos/1024/350/?image=545"
           alt="image slot"
         >
+         <h3> И ХРАМОВЕ ГРАДИХ, ЧЕ ДА УТОЛЯВАТ ЖАЖДАТА СИ И ДУШАТА, И КУЛИ ЗА ЧАСОВНИЦИ, ЧЕ ХОРАТА ВСЕ ИСКАТ ДА УЛОВЯТ ВРЕМЕТО.</h3>
       </b-carousel-slide>
 
       <!-- Slide with blank fluid image to maintain slide aspect ratio -->
@@ -105,4 +108,12 @@ h1 {
         color: white;
         font-style: bold;
     }
+  h3 {
+        padding: 0;
+        margin-top: 0;
+        color: white;
+        font-style: bold;
+    }  
 </style>
+
+
