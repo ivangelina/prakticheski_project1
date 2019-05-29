@@ -10,7 +10,8 @@
           <b-nav-item to="/price">Ценова листа</b-nav-item>
           <b-nav-item to="/calculator">Калкулатор</b-nav-item>
            <b-nav-item to="/worksmr">Анализ СМР</b-nav-item>
-          <b-nav-item to="/conventorbg">Конвентор от BGN към EUR</b-nav-item>
+           <b-nav-item to="/hours">Часовник</b-nav-item>
+          <b-nav-item to="/conventorbg">Конвентор</b-nav-item>
           <b-nav-item to="/relations">Полезни връзки</b-nav-item>
         </b-navbar-nav>
       </b-collapse>

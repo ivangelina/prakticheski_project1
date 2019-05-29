@@ -8,6 +8,7 @@ import Price from '../components/price/Price';
 import Home from '../components/home/Home';
 import Calculator from '../components/calculator/Calculator';
 import WorkSmr from '../components/worksmr/WorkSmr';
+import Hours from '../components/hours/Hours';
 import ConventorBg from '../components/conventorbg/ConventorBg';
 import Relations from '../components/relations/Relations';
 import DiscoverMovies from '../components/discover/DiscoverMovies';
@@ -75,6 +76,15 @@ export default new Router({
       components: {
         navigation: Navigation,
         default: WorkSmr,
+        footer: Footer,
+      },
+    },
+    {
+      path: '/hours',
+      name: 'Hours',
+      components: {
+        navigation: Navigation,
+        default: Hours,
         footer: Footer,
       },
     },
