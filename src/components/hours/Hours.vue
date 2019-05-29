@@ -1,6 +1,7 @@
 <template>
     <!-- <div class="clock" :class="{'is-small':size==='small'}" :style="clockStyle"> -->
         <div class="calculator-layout py-5">
+            <div class="container pt-3">
              <div class="calculator-overlay p-5">
 
                  <div class="row">
@@ -23,6 +24,7 @@
                          </div>
     </div>
     </div>
+            </div>
     </div>
 </template>
 
