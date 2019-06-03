@@ -1,9 +1,8 @@
 <template>
     <!-- <div class="clock" :class="{'is-small':size==='small'}" :style="clockStyle"> -->
-        <div class="calculator-layout py-5">
+        <div class="calculator-layout py-2">
             <div class="container pt-3">
-             <div class="calculator-overlay p-5">
-
+             <div class="calculator-overlay p-2">
                  <div class="row">
                      <div role="group" class="col-md-4">
                          </div>
@@ -23,9 +22,53 @@
       <div role="group" class="col-md-4">
                          </div>
     </div>
+
+    <div class="container-fluid">  
+
+    <b-list-group>
+        <div class="row">
+                  <div class="col-sm-4"></div>
+                 <div class="col-sm-4"> 
+  <b-list-group-item href="#">Майстор Кольо Фичето</b-list-group-item></div> 
+        <div class="col-sm-4"></div>
+        </div>
+   
+ <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6"> 
+  <b-list-group-item href="#" variant="primary">Майстор Кольо Фичето</b-list-group-item></div> 
+  <div class="col-sm-3"></div>
+        </div>
+<div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8"> 
+  <b-list-group-item href="#" variant="secondary">Майстор Кольо Фичето</b-list-group-item>
+</div> 
+  <div class="col-sm-2"></div>
+        </div>
+<div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10"> 
+  <b-list-group-item href="#" variant="success">Майстор Кольо Фичето</b-list-group-item>
+  </div> 
+  <div class="col-sm-1"></div>
+        </div>
+  <b-list-group-item href="#" variant="danger">Майстор Кольо Фичето</b-list-group-item>
+  <b-list-group-item href="#" variant="warning">Майстор Кольо Фичето</b-list-group-item>
+  <b-list-group-item href="#" variant="info">Майстор Кольо Фичето</b-list-group-item>
+  <b-list-group-item href="#" variant="light">
+      <a><h6>МОСТОВЕ ГРАДИХ, ДЕТО ДА СЪБИРАТ ЧОВЕК С ЧОВЕКА И МАНАСТИРИ, ДЕТО ДА ГО СЪБИРАТ С БОГА.
+        ХРАМОВЕ ГРАДИХ, ЧЕ ДА УТОЛЯВАТ ЖАЖДАТА СИ И ДУШАТА, И КУЛИ ЗА ЧАСОВНИЦИ, ЧЕ ХОРАТА ВСЕ ИСКАТ ДА УЛОВЯТ ВРЕМЕТО.
+           </h6></a>
+  </b-list-group-item>
+  <b-list-group-item href="#" variant="dark"><a> <h4> КУЛАТА С ЧАСОВНИКА</h4></a>
+
+  </b-list-group-item>
+</b-list-group>
+  </div>
     </div>
+        </div>
             </div>
-    </div>
 </template>
 
 <script>
@@ -106,8 +149,8 @@ $angle: 30deg;
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border: 5px solid;
     border-radius: 100%;
     text-align: center;
@@ -215,6 +258,8 @@ $angle: 30deg;
         }
     }
 }
+ 
 </style>
+
 
 
