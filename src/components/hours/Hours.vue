@@ -36,32 +36,41 @@
  <div class="row">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6"> 
-  <b-list-group-item href="#" variant="primary">Майстор Кольо Фичето</b-list-group-item></div> 
+  <b-list-group-item href="#">Майстор Кольо Фичето</b-list-group-item></div> 
   <div class="col-sm-3"></div>
         </div>
 <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8"> 
-  <b-list-group-item href="#" variant="secondary">Майстор Кольо Фичето</b-list-group-item>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6"> 
+  <b-list-group-item href="#">Майстор Кольо Фичето</b-list-group-item>
 </div> 
-  <div class="col-sm-2"></div>
+  <div class="col-sm-3"></div>
         </div>
+
+   <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">      
+  <b-list-group-item href="#">Майстор Кольо Фичето</b-list-group-item></div> 
+  <div class="col-sm-3"></div>
+   </div>
+
 <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10"> 
-  <b-list-group-item href="#" variant="success">Майстор Кольо Фичето</b-list-group-item>
-  </div> 
-  <div class="col-sm-1"></div>
-        </div>
-  <b-list-group-item href="#" variant="danger">Майстор Кольо Фичето</b-list-group-item>
-  <b-list-group-item href="#" variant="warning">Майстор Кольо Фичето</b-list-group-item>
-  <b-list-group-item href="#" variant="info">Майстор Кольо Фичето</b-list-group-item>
-  <b-list-group-item href="#" variant="light">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6"> 
+  <b-list-group-item href="#">Майстор Кольо Фичето</b-list-group-item></div> 
+  <div class="col-sm-3"></div>
+   </div>
+   <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6"> 
+  <b-list-group-item href="#">
       <a><h6>МОСТОВЕ ГРАДИХ, ДЕТО ДА СЪБИРАТ ЧОВЕК С ЧОВЕКА И МАНАСТИРИ, ДЕТО ДА ГО СЪБИРАТ С БОГА.
         ХРАМОВЕ ГРАДИХ, ЧЕ ДА УТОЛЯВАТ ЖАЖДАТА СИ И ДУШАТА, И КУЛИ ЗА ЧАСОВНИЦИ, ЧЕ ХОРАТА ВСЕ ИСКАТ ДА УЛОВЯТ ВРЕМЕТО.
            </h6></a>
-  </b-list-group-item>
-  <b-list-group-item href="#" variant="dark"><a> <h4> КУЛАТА С ЧАСОВНИКА</h4></a>
+  </b-list-group-item></div> 
+  <div class="col-sm-3"></div>
+   </div>
+  <b-list-group-item href="#" variant="dark"><a> <h3> КУЛАТА С ЧАСОВНИКА</h3></a>
 
   </b-list-group-item>
 </b-list-group>
@@ -260,6 +269,3 @@ $angle: 30deg;
 }
  
 </style>
-
-
-
