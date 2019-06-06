@@ -1,8 +1,8 @@
 <template>
-<div class="buyer-layout py-1">
+<div class="buyer-layout py-4">
 <b-container class="bv-example-row bv-example-row-flex-cols mt-2">
-  <div class="buyer-overlay p-2">
-<div class="container-flex mt-2">
+  <div class="buyer-overlay p-5">
+<div class="container-flex mt-1">
      <h3>Анализна цена за боядисване с латекс</h3>
      <div class="row">
         <h5>1.МАТЕРИАЛИ</h5> 
@@ -21,7 +21,8 @@
                <b-form-input v-model="calculatedMaterialsConsumedPrice" readonly type="number" placeholder="цена лв." />
             </div>
            </div>
-         <div class="row">
+           <br>
+         <div class="row"> 
         <h5>1.1.Дост.скл.р-ди мат.</h5> 
      </div>
   <div class="row">
@@ -57,6 +58,7 @@
                    <b-form-input v-model="calculatedManHoursPrice" readonly type="number" placeholder="цена лв." />
               </div>
              </div>
+             <br>
               <div class="row">
         <h5>2.1.Допълнителни р-ди труд</h5> 
      </div>
