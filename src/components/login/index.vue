@@ -35,10 +35,10 @@
       </div>
      </div>
      <br>
-       <p style="font-size:large; font-style: italic; color: blue; font-weight: !important">Влезте в приложението,
+       <p style="font-size:large; font-style: italic; color: black; font-weight: !important">Влезте в приложението,
           като задължително запишете име и парола!</p>
-    <div class="row justify-content-center align-items-center h-200 border: 10px solid #256">
-      <div class="col-md-5 col-lg-3">
+    <div class="row justify-content-center align-items-center h-200 border: 15px solid #256">
+      <div class="col-md-5 col-lg-8">
         <b-card>
           <b-form @submit="onLogin">
             <b-form-group id="userInputGroup"
@@ -64,7 +64,7 @@
                             placeholder="Enter password">
               </b-form-input>
             </b-form-group>
-            <b-button type="submit" variant="primary" block>ВХОД</b-button>
+            <b-button type="submit" variant="dark" block>ВХОД</b-button>
           </b-form>
         </b-card>
         <br>
@@ -73,8 +73,7 @@
       </div>
     </div>
      </div>
-     
-  </div>
+    
 </template>
 
 <script>
@@ -100,16 +99,17 @@
  h1 {
         padding: 0;
         margin-top: 0;
-        color: brown;
+        color: black;
         font-style: bold;
     }
   h4 {
         padding: 0;
         margin-top: 0;
-        color: brown;
+        color: black;
         font-style: bold;
     }
 </style>
+
 
 
 
