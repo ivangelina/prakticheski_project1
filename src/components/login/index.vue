@@ -69,11 +69,25 @@
         </b-card>
         <br>
           </div>
-          </div>     
+          </div> 
+           <div class="row">
+    <div class="col-sm-4" style="background-color:lavender; ">  
+      <a href="http://localhost:8080/#/builder/" target="_blank">СЕКЦИЯ ПРЕДПРИЕМАЧ</a>
+</div>
+<div class="col-sm-4" style="background-color:lavender;">  
+      <a href="http://localhost:8080/#/buyer/" target="_blank">СЕКЦИЯ КУПУВАЧ</a> 
+      <br>
+      </div>
+     <div class="col-sm-4" style="background-color:lavender;">  
+      <a href="http://localhost:8080/#/worksmr/" target="_blank">СЕКЦИЯ АНАЛИЗ СМР</a> 
+      <br>
+      </div> 
+      </div>
+   
       </div>
     </div>
-     </div>
-    
+     </div>  
+ 
 </template>
 
 <script>
