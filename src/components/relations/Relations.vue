@@ -4,6 +4,12 @@
   <div class="buyer-overlay p-5">
   <br>
 <div class="container-fluid">
+  <div>
+    <h6>Календар (избери дата)</h6>
+    <input type="date" name="dt">
+  </div>
+  <br>
+
   <h3>ПОЛЕЗНИ ВРЪЗКИ</h3>
   <p> </p>
   <p>ВРЪЗКИ КЪМ ДЪРЖАВНИ ИНСТИТУЦИИ И БАНКИ</p>
